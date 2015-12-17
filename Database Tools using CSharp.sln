@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database Tools using CSharp", "Database Tools in CSharp\Database Tools using CSharp.csproj", "{76C64EAF-EB0D-4938-A70A-28AFF901451A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database Tools using CSharp", "Database Tools using CSharp\Database Tools using CSharp.csproj", "{76C64EAF-EB0D-4938-A70A-28AFF901451A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

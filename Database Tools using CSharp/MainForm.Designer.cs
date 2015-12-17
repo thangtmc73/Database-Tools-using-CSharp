@@ -344,6 +344,7 @@
             // 
             // richTextBoxAbout
             // 
+            this.richTextBoxAbout.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.richTextBoxAbout, "richTextBoxAbout");
             this.richTextBoxAbout.Name = "richTextBoxAbout";
             this.richTextBoxAbout.ReadOnly = true;
@@ -437,7 +438,7 @@
                 }
                 return _instance;
             }
-            public void getAttributeNamesFromString()
+            public void readAttributeNamesFromString()
             {
                 if (R.Count != 0)
                 {
@@ -476,80 +477,80 @@
                 //    System.Windows.Forms.MessageBox.Show(i + "|");
                 //}
             }
-            public void getFDsFromString()
+            public void readFDsFromString()
             {
                 // set empty FDs
                 if (FDSetLeft.Count != 0)
-	            {
-	            	FDSetLeft.Clear();
-            	}
-            	if (FDSetRight.Count != 0)
-	            {
-	            	FDSetRight.Clear();
-	            }
+                {
+                    FDSetLeft.Clear();
+                }
+                if (FDSetRight.Count != 0)
+                {
+                    FDSetRight.Clear();
+                }
 
                 string input = MainForm.getInstance().textBoxInputListFDsSet.Text;
                 int check = (int)NSDatabaseTools.CSupport.eCheck.left;
                 string tempt = "";
 
                 for (int i = 0; i < input.Length; i++)
-	            {
-		            if (i == 0 || input[i] == ';')
-		            {
-			            FDSetLeft.Add(0);
-		            }
+                {
+                    if (i == 0 || input[i] == ';')
+                    {
+                        FDSetLeft.Add(0);
+                    }
 
-		            if (check != (int)CSupport.eCheck.left && input[i] == '-')
-		            {
-			            return;
-		            }
+                    if (check != (int)CSupport.eCheck.left && input[i] == '-')
+                    {
+                        return;
+                    }
 
                     if (input[i] == ',' || input[i] == ';' || input[i] == '-')
-		            {
-			            if (!R.Exists(x => x == tempt))
-			            {
-				            return;
-			            }
+                    {
+                        if (!R.Exists(x => x == tempt))
+                        {
+                            return;
+                        }
 
-			            if (check == (int)CSupport.eCheck.left)
-			            {
+                        if (check == (int)CSupport.eCheck.left)
+                        {
                             FDSetLeft[FDSetLeft.Count - 1] = CSupport.union(FDSetLeft[FDSetLeft.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
-			            }
-			            else
-			            {
-				            FDSetRight[FDSetRight.Count - 1] = CSupport.union(FDSetRight[FDSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
-			            }
+                        }
+                        else
+                        {
+                            FDSetRight[FDSetRight.Count - 1] = CSupport.union(FDSetRight[FDSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
+                        }
                     }
 
                     if (input[i] == '-')
-		            {
-		            	FDSetRight.Add(0);
-		            	check = (int)CSupport.eCheck.right;
-		            }
+                    {
+                        FDSetRight.Add(0);
+                        check = (int)CSupport.eCheck.right;
+                    }
 
                     if (input[i] == ';')
-		            {
-		            	check = (int)CSupport.eCheck.left;
-		            }
+                    {
+                        check = (int)CSupport.eCheck.left;
+                    }
 
                     if (input[i] == '-' || input[i] == ';' || input[i] == ',')
-		            {
+                    {
                         tempt = tempt.Remove(0);
                         tempt = "";
-		            }
-		            else
-		            {
-			            tempt += input[i];
-			            if (check == (int)CSupport.eCheck.right && i == input.Length - 1)
-			            {
+                    }
+                    else
+                    {
+                        tempt += input[i];
+                        if (check == (int)CSupport.eCheck.right && i == input.Length - 1)
+                        {
                             if (R.Exists(x => x == tempt))
                             {
                                 FDSetRight[FDSetRight.Count - 1] = CSupport.union(FDSetRight[FDSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
                             }
-				            tempt = tempt.Remove(0);
+                            tempt = tempt.Remove(0);
                             tempt = "";
                         }
-                    }   
+                    }
                 }
                 //for (int i = 0; i < FDSetLeft.Count; i++)
                 //{
@@ -579,11 +580,11 @@
                 //        j = j >> 1;
                 //        count++;
                 //    }
-                    
+
                 //    System.Windows.Forms.MessageBox.Show(a);
                 //}
             }
-            public void getSpecifiedAttributesNames()
+            public void readSpecifiedAttributesNames()
             {
                 if (specifiedAttributes != 0)
                 {
@@ -610,20 +611,20 @@
                         text = "";
                     }
                 }
-                ulong j = specifiedAttributes;
-                string a = "";
-                int count = 0;
-                while (j != 0)
-                {
-                    if (CSupport.intrsct((ulong)j, 1) == 1)
-                    {
-                        a += R[count];
-                        a += ", ";
-                    }
-                    j = j >> 1;
-                    count++;
-                }
-                System.Windows.Forms.MessageBox.Show(a);
+                //ulong j = specifiedAttributes;
+                //string a = "";
+                //int count = 0;
+                //while (j != 0)
+                //{
+                //    if (CSupport.intrsct((ulong)j, 1) == 1)
+                //    {
+                //        a += R[count];
+                //        a += ", ";
+                //    }
+                //    j = j >> 1;
+                //    count++;
+                //}
+                //System.Windows.Forms.MessageBox.Show(a);
             }
             public void findAllClosures()
             {
@@ -641,22 +642,130 @@
                 {
                     FDClosure.Clear();
                 }
-                
-                for (ulong i = 0; i < CSupport.powOf2(R.Count); i++)
+
+                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
                 {
-                    FDClosure.Add(0);
-                    FDClosure[(int)i] = i + 1;
+                    FDClosure.Add(i + 1);
+                    ulong old = FDClosure[(int)i];
+                    do
+                    {
+                        old = FDClosure[(int)i];
+                        for (int j = 0; j < FDSetLeft.Count; j++)
+                        {
+                            if (CSupport.union(FDSetLeft[j], FDClosure[(int)i]) == FDClosure[(int)i]
+                                && CSupport.union(FDSetRight[j], FDClosure[(int)i]) != FDClosure[(int)i])
+                            {
+                                FDClosure[(int)i] = CSupport.union(FDClosure[(int)i], FDSetRight[j]);
+                            }
+                        }
+                    } while (old != FDClosure[(int)i]);
                 }
             }
+            public void writeResultToListAllClosures()
+            {
+                if (R.Count == 0)
+                {
+                    return;
+                }
 
-            private CInProcess(){}
+                if (FDClosure.Count == 0)
+                {
+                    return;
+                }
+                string text = "";
+                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
+                {
+                    ulong num = FDClosure[(int)i];
+                    ulong k = i + 1;
+                    int count = 0;
+                    while (k != 0)
+                    {
+                        if (CSupport.intrsct(k, 1) == 1)
+                        {
+                            text += R[count];
+                            if (CSupport.srl(k, 1) != 0)
+                            {
+                                text += ',';
+                            }
+                        }
+                        k = CSupport.srl(k, 1);
+                        count++;
+                    }
+                    text += "+ = {";
+                    count = 0;
+                    while (num != 0)
+                    {
+                        if (CSupport.intrsct(num, 1) == 1)
+                        {
+                            text += R[count];
+                            if (CSupport.srl(num, 1) != 0)
+                            {
+                                text += ',';
+                            }
+                        }
+                        num = CSupport.srl(num, 1);
+                        count++;
+                    }
+                    text += ("};" + System.Environment.NewLine);
+                }
+                MainForm.getInstance().textBoxResultListClosuresSet.Text = text;
+            }
+            public void writeResultClosureOfSpecifiedAttributes()
+            {
+                if (R.Count == 0)
+                {
+                    return;
+                }
+
+                if (FDClosure.Count == 0)
+                {
+                    return;
+                }
+                ulong index = specifiedAttributes;
+                string text = "";
+                ulong num = FDClosure[(int)index - 1];
+                int count = 0;
+                while (index != 0)
+                {
+                    if (CSupport.intrsct(index, 1) == 1)
+                    {
+                        text += R[count];
+                        if (CSupport.srl(index, 1) != 0)
+                        {
+                            text += ',';
+                        }
+                    }
+                    index = CSupport.srl(index, 1);
+                    count++;
+                }
+                text += "+ = {";
+                count = 0;
+                while (num != 0)
+                {
+                    if (CSupport.intrsct(num, 1) == 1)
+                    {
+                        text += R[count];
+                        if (CSupport.srl(num, 1) != 0)
+                        {
+                            text += ',';
+                        }
+                    }
+                    num = CSupport.srl(num, 1);
+                    count++;
+                }
+                text += ("};" + System.Environment.NewLine);
+                MainForm.getInstance().textBoxResultClosureOf.Text = text;
+            }
+
+            private CInProcess() { }
             private static CInProcess _instance = null;
             private System.Collections.Generic.List<string> R;
             private System.Collections.Generic.List<ulong> FDClosure;
             private System.Collections.Generic.List<ulong> FDSetLeft;
             private System.Collections.Generic.List<ulong> FDSetRight;
             private ulong specifiedAttributes;
-        }
+        };
     }
 }
+
 

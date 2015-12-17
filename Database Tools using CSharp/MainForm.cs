@@ -17,16 +17,26 @@ namespace NSDatabaseTools
         {
             InitializeComponent();
         }
+        
+        private void resetResult()
+        {
+            // reset
+            MainForm.getInstance().textBoxResultClosureOf.Text = "";
+            MainForm.getInstance().textBoxResultListClosuresSet.Text = "";
+            MainForm.getInstance().textBoxResultListKeysSet.Text = "";
+            MainForm.getInstance().textBoxResultListSuperkeysSet.Text = "";
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainForm.CInProcess.getInstance().init();
+            CInProcess.getInstance().init();
         }
 
         private void buttonFindSuperkeysSet_Click(object sender, EventArgs e)
         {
-            MainForm.CInProcess.getInstance().getAttributeNamesFromString();
-            MainForm.CInProcess.getInstance().getFDsFromString();
+            resetResult();
+            CInProcess.getInstance().readAttributeNamesFromString();
+            CInProcess.getInstance().readFDsFromString();
         }
 
         private void buttonFindKeysSet_Click(object sender, EventArgs e)
@@ -36,13 +46,21 @@ namespace NSDatabaseTools
 
         private void buttonFindClosuresSet_Click(object sender, EventArgs e)
         {
-
+            resetResult();
+            CInProcess.getInstance().readAttributeNamesFromString();
+            CInProcess.getInstance().readFDsFromString();
+            CInProcess.getInstance().findAllClosures();
+            CInProcess.getInstance().writeResultToListAllClosures();
         }
 
         private void buttonFindClosureOf_Click(object sender, EventArgs e)
         {
-            MainForm.CInProcess.getInstance().getAttributeNamesFromString();
-            MainForm.CInProcess.getInstance().getSpecifiedAttributesNames();
+            resetResult();
+            CInProcess.getInstance().readAttributeNamesFromString();
+            CInProcess.getInstance().readFDsFromString();
+            CInProcess.getInstance().findAllClosures();
+            CInProcess.getInstance().readSpecifiedAttributesNames();
+            CInProcess.getInstance().writeResultClosureOfSpecifiedAttributes();
         }
 
         private void buttonResetAll_Click(object sender, EventArgs e)
