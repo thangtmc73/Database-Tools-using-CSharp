@@ -68,28 +68,30 @@
             this.labelInputListFDsSet = new System.Windows.Forms.Label();
             this.textBoxResultListKeysSet = new System.Windows.Forms.TextBox();
             this.labelResultListKeysSet = new System.Windows.Forms.Label();
-            this.textBoxResultListSuperkeysSet = new System.Windows.Forms.TextBox();
             this.labelResultListSuperkeysSet = new System.Windows.Forms.Label();
             this.textBoxResultListClosuresSet = new System.Windows.Forms.TextBox();
             this.labelResultListClosuresSet = new System.Windows.Forms.Label();
-            this.textBoxResultClosureOf = new System.Windows.Forms.TextBox();
-            this.labelResultClosureOfAttributes = new System.Windows.Forms.Label();
             this.labelAuthor = new System.Windows.Forms.Label();
-            this.textBoxInputListAttributesSetToFindClosures = new System.Windows.Forms.TextBox();
             this.labelInputFindClosureOf = new System.Windows.Forms.Label();
-            this.buttonFindClosuresSet = new System.Windows.Forms.Button();
-            this.buttonFindSuperkeysSet = new System.Windows.Forms.Button();
-            this.buttonFindKeysSet = new System.Windows.Forms.Button();
-            this.buttonFindClosureOf = new System.Windows.Forms.Button();
             this.buttonResetAll = new System.Windows.Forms.Button();
             this.labelLine1 = new System.Windows.Forms.Label();
             this.labelLine2 = new System.Windows.Forms.Label();
             this.generalTabs = new System.Windows.Forms.TabControl();
+            this.tabPageCalculate = new System.Windows.Forms.TabPage();
+            this.textBoxInputListAttributesSetToFindClosures = new System.Windows.Forms.TextBox();
+            this.buttonExecuteCalculate = new System.Windows.Forms.Button();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPageSuperkeys = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPageKeys = new System.Windows.Forms.TabPage();
+            this.tabPageClosures = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.labelResultClosureOfAttributes = new System.Windows.Forms.Label();
+            this.textBoxResultClosureOf = new System.Windows.Forms.TextBox();
             this.labelHeaderControl = new System.Windows.Forms.Label();
             this.labelHeaderResult = new System.Windows.Forms.Label();
             this.labelHeaderInput = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageConnect = new System.Windows.Forms.TabPage();
             this.buttonBrowse = new System.Windows.Forms.Button();
             this.richTextBoxResultFDsSet = new System.Windows.Forms.RichTextBox();
             this.labelResultFDsSet = new System.Windows.Forms.Label();
@@ -99,9 +101,15 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.richTextBoxAbout = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.richTextBoxResultListSuperkeysSet = new System.Windows.Forms.RichTextBox();
             this.generalTabs.SuspendLayout();
+            this.tabPageCalculate.SuspendLayout();
+            this.tabControl.SuspendLayout();
+            this.tabPageSuperkeys.SuspendLayout();
+            this.tabPageKeys.SuspendLayout();
+            this.tabPageClosures.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabPageConnect.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,13 +145,6 @@
             resources.ApplyResources(this.labelResultListKeysSet, "labelResultListKeysSet");
             this.labelResultListKeysSet.Name = "labelResultListKeysSet";
             // 
-            // textBoxResultListSuperkeysSet
-            // 
-            this.textBoxResultListSuperkeysSet.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.textBoxResultListSuperkeysSet, "textBoxResultListSuperkeysSet");
-            this.textBoxResultListSuperkeysSet.Name = "textBoxResultListSuperkeysSet";
-            this.textBoxResultListSuperkeysSet.ReadOnly = true;
-            // 
             // labelResultListSuperkeysSet
             // 
             resources.ApplyResources(this.labelResultListSuperkeysSet, "labelResultListSuperkeysSet");
@@ -161,60 +162,15 @@
             resources.ApplyResources(this.labelResultListClosuresSet, "labelResultListClosuresSet");
             this.labelResultListClosuresSet.Name = "labelResultListClosuresSet";
             // 
-            // textBoxResultClosureOf
-            // 
-            this.textBoxResultClosureOf.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.textBoxResultClosureOf, "textBoxResultClosureOf");
-            this.textBoxResultClosureOf.Name = "textBoxResultClosureOf";
-            this.textBoxResultClosureOf.ReadOnly = true;
-            // 
-            // labelResultClosureOfAttributes
-            // 
-            resources.ApplyResources(this.labelResultClosureOfAttributes, "labelResultClosureOfAttributes");
-            this.labelResultClosureOfAttributes.Name = "labelResultClosureOfAttributes";
-            // 
             // labelAuthor
             // 
             resources.ApplyResources(this.labelAuthor, "labelAuthor");
             this.labelAuthor.Name = "labelAuthor";
             // 
-            // textBoxInputListAttributesSetToFindClosures
-            // 
-            resources.ApplyResources(this.textBoxInputListAttributesSetToFindClosures, "textBoxInputListAttributesSetToFindClosures");
-            this.textBoxInputListAttributesSetToFindClosures.Name = "textBoxInputListAttributesSetToFindClosures";
-            // 
             // labelInputFindClosureOf
             // 
             resources.ApplyResources(this.labelInputFindClosureOf, "labelInputFindClosureOf");
             this.labelInputFindClosureOf.Name = "labelInputFindClosureOf";
-            // 
-            // buttonFindClosuresSet
-            // 
-            resources.ApplyResources(this.buttonFindClosuresSet, "buttonFindClosuresSet");
-            this.buttonFindClosuresSet.Name = "buttonFindClosuresSet";
-            this.buttonFindClosuresSet.UseVisualStyleBackColor = true;
-            this.buttonFindClosuresSet.Click += new System.EventHandler(this.buttonFindClosuresSet_Click);
-            // 
-            // buttonFindSuperkeysSet
-            // 
-            resources.ApplyResources(this.buttonFindSuperkeysSet, "buttonFindSuperkeysSet");
-            this.buttonFindSuperkeysSet.Name = "buttonFindSuperkeysSet";
-            this.buttonFindSuperkeysSet.UseVisualStyleBackColor = true;
-            this.buttonFindSuperkeysSet.Click += new System.EventHandler(this.buttonFindSuperkeysSet_Click);
-            // 
-            // buttonFindKeysSet
-            // 
-            resources.ApplyResources(this.buttonFindKeysSet, "buttonFindKeysSet");
-            this.buttonFindKeysSet.Name = "buttonFindKeysSet";
-            this.buttonFindKeysSet.UseVisualStyleBackColor = true;
-            this.buttonFindKeysSet.Click += new System.EventHandler(this.buttonFindKeysSet_Click);
-            // 
-            // buttonFindClosureOf
-            // 
-            resources.ApplyResources(this.buttonFindClosureOf, "buttonFindClosureOf");
-            this.buttonFindClosureOf.Name = "buttonFindClosureOf";
-            this.buttonFindClosureOf.UseVisualStyleBackColor = true;
-            this.buttonFindClosureOf.Click += new System.EventHandler(this.buttonFindClosureOf_Click);
             // 
             // buttonResetAll
             // 
@@ -237,42 +193,110 @@
             // 
             // generalTabs
             // 
-            this.generalTabs.Controls.Add(this.tabPage1);
-            this.generalTabs.Controls.Add(this.tabPage2);
+            this.generalTabs.Controls.Add(this.tabPageCalculate);
+            this.generalTabs.Controls.Add(this.tabPageConnect);
             this.generalTabs.Controls.Add(this.tabPage3);
             resources.ApplyResources(this.generalTabs, "generalTabs");
             this.generalTabs.Name = "generalTabs";
             this.generalTabs.SelectedIndex = 0;
             // 
+            // tabPageCalculate
+            // 
+            this.tabPageCalculate.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageCalculate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageCalculate.Controls.Add(this.textBoxInputListAttributesSetToFindClosures);
+            this.tabPageCalculate.Controls.Add(this.buttonExecuteCalculate);
+            this.tabPageCalculate.Controls.Add(this.tabControl);
+            this.tabPageCalculate.Controls.Add(this.labelHeaderControl);
+            this.tabPageCalculate.Controls.Add(this.labelHeaderResult);
+            this.tabPageCalculate.Controls.Add(this.labelHeaderInput);
+            this.tabPageCalculate.Controls.Add(this.labelLine2);
+            this.tabPageCalculate.Controls.Add(this.labelInputListAllAttributes);
+            this.tabPageCalculate.Controls.Add(this.labelLine1);
+            this.tabPageCalculate.Controls.Add(this.textBoxInputListAttributesSet);
+            this.tabPageCalculate.Controls.Add(this.buttonResetAll);
+            this.tabPageCalculate.Controls.Add(this.labelInputListFDsSet);
+            this.tabPageCalculate.Controls.Add(this.textBoxInputListFDsSet);
+            this.tabPageCalculate.Controls.Add(this.labelInputFindClosureOf);
+            this.tabPageCalculate.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.tabPageCalculate, "tabPageCalculate");
+            this.tabPageCalculate.Name = "tabPageCalculate";
+            // 
+            // textBoxInputListAttributesSetToFindClosures
+            // 
+            resources.ApplyResources(this.textBoxInputListAttributesSetToFindClosures, "textBoxInputListAttributesSetToFindClosures");
+            this.textBoxInputListAttributesSetToFindClosures.Name = "textBoxInputListAttributesSetToFindClosures";
+            // 
+            // buttonExecuteCalculate
+            // 
+            resources.ApplyResources(this.buttonExecuteCalculate, "buttonExecuteCalculate");
+            this.buttonExecuteCalculate.Name = "buttonExecuteCalculate";
+            this.buttonExecuteCalculate.UseVisualStyleBackColor = true;
+            this.buttonExecuteCalculate.Click += new System.EventHandler(this.buttonExecuteCalculate_Click);
+            // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.tabPageSuperkeys);
+            this.tabControl.Controls.Add(this.tabPageKeys);
+            this.tabControl.Controls.Add(this.tabPageClosures);
+            this.tabControl.Controls.Add(this.tabPage1);
+            resources.ApplyResources(this.tabControl, "tabControl");
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            // 
+            // tabPageSuperkeys
+            // 
+            this.tabPageSuperkeys.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageSuperkeys.Controls.Add(this.richTextBoxResultListSuperkeysSet);
+            this.tabPageSuperkeys.Controls.Add(this.label1);
+            this.tabPageSuperkeys.Controls.Add(this.labelResultListSuperkeysSet);
+            resources.ApplyResources(this.tabPageSuperkeys, "tabPageSuperkeys");
+            this.tabPageSuperkeys.Name = "tabPageSuperkeys";
+            this.tabPageSuperkeys.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // tabPageKeys
+            // 
+            this.tabPageKeys.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageKeys.Controls.Add(this.labelResultListKeysSet);
+            this.tabPageKeys.Controls.Add(this.textBoxResultListKeysSet);
+            resources.ApplyResources(this.tabPageKeys, "tabPageKeys");
+            this.tabPageKeys.Name = "tabPageKeys";
+            this.tabPageKeys.UseVisualStyleBackColor = true;
+            // 
+            // tabPageClosures
+            // 
+            this.tabPageClosures.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageClosures.Controls.Add(this.labelResultListClosuresSet);
+            this.tabPageClosures.Controls.Add(this.textBoxResultListClosuresSet);
+            resources.ApplyResources(this.tabPageClosures, "tabPageClosures");
+            this.tabPageClosures.Name = "tabPageClosures";
+            this.tabPageClosures.UseVisualStyleBackColor = true;
+            // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.labelHeaderControl);
-            this.tabPage1.Controls.Add(this.labelHeaderResult);
-            this.tabPage1.Controls.Add(this.labelHeaderInput);
-            this.tabPage1.Controls.Add(this.textBoxResultListSuperkeysSet);
-            this.tabPage1.Controls.Add(this.labelLine2);
-            this.tabPage1.Controls.Add(this.labelInputListAllAttributes);
-            this.tabPage1.Controls.Add(this.labelLine1);
-            this.tabPage1.Controls.Add(this.textBoxInputListAttributesSet);
-            this.tabPage1.Controls.Add(this.buttonResetAll);
-            this.tabPage1.Controls.Add(this.labelInputListFDsSet);
-            this.tabPage1.Controls.Add(this.buttonFindClosureOf);
-            this.tabPage1.Controls.Add(this.textBoxInputListFDsSet);
-            this.tabPage1.Controls.Add(this.buttonFindKeysSet);
-            this.tabPage1.Controls.Add(this.labelResultListSuperkeysSet);
-            this.tabPage1.Controls.Add(this.buttonFindSuperkeysSet);
-            this.tabPage1.Controls.Add(this.labelResultListKeysSet);
-            this.tabPage1.Controls.Add(this.buttonFindClosuresSet);
-            this.tabPage1.Controls.Add(this.textBoxResultListKeysSet);
-            this.tabPage1.Controls.Add(this.textBoxInputListAttributesSetToFindClosures);
-            this.tabPage1.Controls.Add(this.labelResultListClosuresSet);
-            this.tabPage1.Controls.Add(this.labelInputFindClosureOf);
-            this.tabPage1.Controls.Add(this.textBoxResultListClosuresSet);
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.labelResultClosureOfAttributes);
             this.tabPage1.Controls.Add(this.textBoxResultClosureOf);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // labelResultClosureOfAttributes
+            // 
+            resources.ApplyResources(this.labelResultClosureOfAttributes, "labelResultClosureOfAttributes");
+            this.labelResultClosureOfAttributes.Name = "labelResultClosureOfAttributes";
+            // 
+            // textBoxResultClosureOf
+            // 
+            this.textBoxResultClosureOf.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.textBoxResultClosureOf, "textBoxResultClosureOf");
+            this.textBoxResultClosureOf.Name = "textBoxResultClosureOf";
+            this.textBoxResultClosureOf.ReadOnly = true;
             // 
             // labelHeaderControl
             // 
@@ -289,17 +313,18 @@
             resources.ApplyResources(this.labelHeaderInput, "labelHeaderInput");
             this.labelHeaderInput.Name = "labelHeaderInput";
             // 
-            // tabPage2
+            // tabPageConnect
             // 
-            this.tabPage2.Controls.Add(this.buttonBrowse);
-            this.tabPage2.Controls.Add(this.richTextBoxResultFDsSet);
-            this.tabPage2.Controls.Add(this.labelResultFDsSet);
-            this.tabPage2.Controls.Add(this.buttonFindFDs);
-            this.tabPage2.Controls.Add(this.labelInputPath);
-            this.tabPage2.Controls.Add(this.textBoxInputPath);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageConnect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageConnect.Controls.Add(this.buttonBrowse);
+            this.tabPageConnect.Controls.Add(this.richTextBoxResultFDsSet);
+            this.tabPageConnect.Controls.Add(this.labelResultFDsSet);
+            this.tabPageConnect.Controls.Add(this.buttonFindFDs);
+            this.tabPageConnect.Controls.Add(this.labelInputPath);
+            this.tabPageConnect.Controls.Add(this.textBoxInputPath);
+            resources.ApplyResources(this.tabPageConnect, "tabPageConnect");
+            this.tabPageConnect.Name = "tabPageConnect";
+            this.tabPageConnect.UseVisualStyleBackColor = true;
             // 
             // buttonBrowse
             // 
@@ -337,6 +362,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage3.Controls.Add(this.richTextBoxAbout);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
@@ -349,6 +375,11 @@
             this.richTextBoxAbout.Name = "richTextBoxAbout";
             this.richTextBoxAbout.ReadOnly = true;
             // 
+            // richTextBoxResultListSuperkeysSet
+            // 
+            resources.ApplyResources(this.richTextBoxResultListSuperkeysSet, "richTextBoxResultListSuperkeysSet");
+            this.richTextBoxResultListSuperkeysSet.Name = "richTextBoxResultListSuperkeysSet";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -359,10 +390,19 @@
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.generalTabs.ResumeLayout(false);
+            this.tabPageCalculate.ResumeLayout(false);
+            this.tabPageCalculate.PerformLayout();
+            this.tabControl.ResumeLayout(false);
+            this.tabPageSuperkeys.ResumeLayout(false);
+            this.tabPageSuperkeys.PerformLayout();
+            this.tabPageKeys.ResumeLayout(false);
+            this.tabPageKeys.PerformLayout();
+            this.tabPageClosures.ResumeLayout(false);
+            this.tabPageClosures.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabPageConnect.ResumeLayout(false);
+            this.tabPageConnect.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -386,19 +426,14 @@
         private System.Windows.Forms.Label labelResultListKeysSet;
         private System.Windows.Forms.Label labelResultListSuperkeysSet;
         private System.Windows.Forms.Label labelResultListClosuresSet;
-        private System.Windows.Forms.Label labelResultClosureOfAttributes;
         private System.Windows.Forms.Label labelAuthor;
         private System.Windows.Forms.Label labelInputFindClosureOf;
-        private System.Windows.Forms.Button buttonFindClosuresSet;
-        private System.Windows.Forms.Button buttonFindSuperkeysSet;
-        private System.Windows.Forms.Button buttonFindKeysSet;
-        private System.Windows.Forms.Button buttonFindClosureOf;
         private System.Windows.Forms.Button buttonResetAll;
         private System.Windows.Forms.Label labelLine1;
         private System.Windows.Forms.Label labelLine2;
         private System.Windows.Forms.TabControl generalTabs;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPageCalculate;
+        private System.Windows.Forms.TabPage tabPageConnect;
         private System.Windows.Forms.Label labelInputPath;
         private System.Windows.Forms.Label labelHeaderInput;
         private System.Windows.Forms.Label labelHeaderResult;
@@ -412,12 +447,20 @@
         public System.Windows.Forms.TextBox textBoxInputListAttributesSet;
         public System.Windows.Forms.TextBox textBoxInputListFDsSet;
         public System.Windows.Forms.TextBox textBoxResultListKeysSet;
-        public System.Windows.Forms.TextBox textBoxResultListSuperkeysSet;
         public System.Windows.Forms.TextBox textBoxResultListClosuresSet;
-        public System.Windows.Forms.TextBox textBoxResultClosureOf;
-        public System.Windows.Forms.TextBox textBoxInputListAttributesSetToFindClosures;
         public System.Windows.Forms.TextBox textBoxInputPath;
         public System.Windows.Forms.RichTextBox richTextBoxResultFDsSet;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabPageSuperkeys;
+        private System.Windows.Forms.TabPage tabPageKeys;
+        private System.Windows.Forms.TabPage tabPageClosures;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label labelResultClosureOfAttributes;
+        public System.Windows.Forms.TextBox textBoxResultClosureOf;
+        private System.Windows.Forms.Button buttonExecuteCalculate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxInputListAttributesSetToFindClosures;
+        private System.Windows.Forms.RichTextBox richTextBoxResultListSuperkeysSet;
 
         class CInProcess
         {
@@ -755,6 +798,46 @@
                 }
                 text += ("};" + System.Environment.NewLine);
                 MainForm.getInstance().textBoxResultClosureOf.Text = text;
+            }
+            public void findAllSuperkeys()
+            {
+                if (R.Count == 0)
+                {
+                    return;
+                }
+
+                if (FDClosure.Count == 0)
+                {
+                    return;
+                }
+
+                ulong valueSuperkey = CSupport.srl(~(ulong)(0), (64 - R.Count));
+                string text = "";
+
+                for (int i = 0; i < (int)CSupport.powOf2(R.Count) - 1; i++)
+                {
+                    if (CSupport.intrsct(FDClosure[i], valueSuperkey) == valueSuperkey)
+                    {
+                        text += "{";
+                        ulong index = (ulong)i + 1;
+                        int count = 0;
+                        while (index != 0)
+                        {
+                            if (CSupport.intrsct(index, 1) == 1)
+                            {
+                                text += R[count];
+                                if (CSupport.srl(index, 1) != 0)
+                                {
+                                    text += ',';
+                                }
+                            }
+                            index = CSupport.srl(index, 1);
+                            count++;
+                        }
+                        text += ("};" + System.Environment.NewLine);
+                        MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = text;
+                    }
+                }
             }
 
             private CInProcess() { }

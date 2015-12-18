@@ -24,45 +24,14 @@ namespace NSDatabaseTools
             MainForm.getInstance().textBoxResultClosureOf.Text = "";
             MainForm.getInstance().textBoxResultListClosuresSet.Text = "";
             MainForm.getInstance().textBoxResultListKeysSet.Text = "";
-            MainForm.getInstance().textBoxResultListSuperkeysSet.Text = "";
+            MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = "";
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             CInProcess.getInstance().init();
         }
-
-        private void buttonFindSuperkeysSet_Click(object sender, EventArgs e)
-        {
-            resetResult();
-            CInProcess.getInstance().readAttributeNamesFromString();
-            CInProcess.getInstance().readFDsFromString();
-        }
-
-        private void buttonFindKeysSet_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonFindClosuresSet_Click(object sender, EventArgs e)
-        {
-            resetResult();
-            CInProcess.getInstance().readAttributeNamesFromString();
-            CInProcess.getInstance().readFDsFromString();
-            CInProcess.getInstance().findAllClosures();
-            CInProcess.getInstance().writeResultToListAllClosures();
-        }
-
-        private void buttonFindClosureOf_Click(object sender, EventArgs e)
-        {
-            resetResult();
-            CInProcess.getInstance().readAttributeNamesFromString();
-            CInProcess.getInstance().readFDsFromString();
-            CInProcess.getInstance().findAllClosures();
-            CInProcess.getInstance().readSpecifiedAttributesNames();
-            CInProcess.getInstance().writeResultClosureOfSpecifiedAttributes();
-        }
-
+       
         private void buttonResetAll_Click(object sender, EventArgs e)
         {
             MainForm.getInstance().textBoxInputListAttributesSet.Text = "";
@@ -72,7 +41,7 @@ namespace NSDatabaseTools
             MainForm.getInstance().textBoxResultClosureOf.Text = "";
             MainForm.getInstance().textBoxResultListClosuresSet.Text = "";
             MainForm.getInstance().textBoxResultListKeysSet.Text = "";
-            MainForm.getInstance().textBoxResultListSuperkeysSet.Text = "";
+            MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = "";
         }
 
         private void buttonBrowse_Click(object sender, EventArgs e)
@@ -90,6 +59,17 @@ namespace NSDatabaseTools
                 {
                 }
             }
+        }
+
+        private void buttonExecuteCalculate_Click(object sender, EventArgs e)
+        {
+            CInProcess.getInstance().readAttributeNamesFromString();
+            CInProcess.getInstance().readFDsFromString();
+            CInProcess.getInstance().readSpecifiedAttributesNames();
+            CInProcess.getInstance().findAllClosures();
+            CInProcess.getInstance().findAllSuperkeys();
+            CInProcess.getInstance().writeResultToListAllClosures();
+            CInProcess.getInstance().writeResultClosureOfSpecifiedAttributes();
         }
     }
 }
