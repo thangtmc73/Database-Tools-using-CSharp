@@ -2,6 +2,17 @@
 {
     class CSupport
     {
+        public static uint countBits(ulong data)
+        {
+            data = intrsct(data, 0x5555555555555555) + (intrsct(srl(data, 1), 0x5555555555555555));
+            data = intrsct(data, 0x3333333333333333) + (intrsct(srl(data, 2), 0x3333333333333333));
+            data = intrsct(data, 0x0F0F0F0F0F0F0F0F) + (intrsct(srl(data, 4), 0x0F0F0F0F0F0F0F0F));
+            data = intrsct(data, 0x00FF00FF00FF00FF) + (intrsct(srl(data, 8), 0x00FF00FF00FF00FF));
+            data = intrsct(data, 0x0000FFFF0000FFFF) + (intrsct(srl(data, 16), 0x0000FFFF0000FFFF));
+            data = intrsct(data, 0x00000000FFFFFFFF) + (intrsct(srl(data, 32), 0x00000000FFFFFFFF));
+            return (uint)data;
+        }
+
         public static ulong powOf2(int n)
         {
             return (ulong)1 << n;
@@ -82,6 +93,7 @@
             this.buttonExecuteCalculate = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageSuperkeys = new System.Windows.Forms.TabPage();
+            this.richTextBoxResultListSuperkeysSet = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageKeys = new System.Windows.Forms.TabPage();
             this.tabPageClosures = new System.Windows.Forms.TabPage();
@@ -101,7 +113,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.richTextBoxAbout = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.richTextBoxResultListSuperkeysSet = new System.Windows.Forms.RichTextBox();
             this.generalTabs.SuspendLayout();
             this.tabPageCalculate.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -254,6 +265,12 @@
             this.tabPageSuperkeys.Name = "tabPageSuperkeys";
             this.tabPageSuperkeys.UseVisualStyleBackColor = true;
             // 
+            // richTextBoxResultListSuperkeysSet
+            // 
+            this.richTextBoxResultListSuperkeysSet.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.richTextBoxResultListSuperkeysSet, "richTextBoxResultListSuperkeysSet");
+            this.richTextBoxResultListSuperkeysSet.Name = "richTextBoxResultListSuperkeysSet";
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -375,11 +392,6 @@
             this.richTextBoxAbout.Name = "richTextBoxAbout";
             this.richTextBoxAbout.ReadOnly = true;
             // 
-            // richTextBoxResultListSuperkeysSet
-            // 
-            resources.ApplyResources(this.richTextBoxResultListSuperkeysSet, "richTextBoxResultListSuperkeysSet");
-            this.richTextBoxResultListSuperkeysSet.Name = "richTextBoxResultListSuperkeysSet";
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -468,8 +480,10 @@
             {
                 R = new System.Collections.Generic.List<string>();
                 FDClosure = new System.Collections.Generic.List<ulong>();
-                FDSetLeft = new System.Collections.Generic.List<ulong>();
-                FDSetRight = new System.Collections.Generic.List<ulong>();
+                SuperkeysSet = new System.Collections.Generic.List<ulong>();
+                KeysSet = new System.Collections.Generic.List<ulong>();
+                FDsSetLeft = new System.Collections.Generic.List<ulong>();
+                FDsSetRight = new System.Collections.Generic.List<ulong>();
                 specifiedAttributes = 0;
             }
 
@@ -523,13 +537,13 @@
             public void readFDsFromString()
             {
                 // set empty FDs
-                if (FDSetLeft.Count != 0)
+                if (FDsSetLeft.Count != 0)
                 {
-                    FDSetLeft.Clear();
+                    FDsSetLeft.Clear();
                 }
-                if (FDSetRight.Count != 0)
+                if (FDsSetRight.Count != 0)
                 {
-                    FDSetRight.Clear();
+                    FDsSetRight.Clear();
                 }
 
                 string input = MainForm.getInstance().textBoxInputListFDsSet.Text;
@@ -540,7 +554,7 @@
                 {
                     if (i == 0 || input[i] == ';')
                     {
-                        FDSetLeft.Add(0);
+                        FDsSetLeft.Add(0);
                     }
 
                     if (check != (int)CSupport.eCheck.left && input[i] == '-')
@@ -557,17 +571,17 @@
 
                         if (check == (int)CSupport.eCheck.left)
                         {
-                            FDSetLeft[FDSetLeft.Count - 1] = CSupport.union(FDSetLeft[FDSetLeft.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
+                            FDsSetLeft[FDsSetLeft.Count - 1] = CSupport.union(FDsSetLeft[FDsSetLeft.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
                         }
                         else
                         {
-                            FDSetRight[FDSetRight.Count - 1] = CSupport.union(FDSetRight[FDSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
+                            FDsSetRight[FDsSetRight.Count - 1] = CSupport.union(FDsSetRight[FDsSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
                         }
                     }
 
                     if (input[i] == '-')
                     {
-                        FDSetRight.Add(0);
+                        FDsSetRight.Add(0);
                         check = (int)CSupport.eCheck.right;
                     }
 
@@ -588,17 +602,17 @@
                         {
                             if (R.Exists(x => x == tempt))
                             {
-                                FDSetRight[FDSetRight.Count - 1] = CSupport.union(FDSetRight[FDSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
+                                FDsSetRight[FDsSetRight.Count - 1] = CSupport.union(FDsSetRight[FDsSetRight.Count - 1], CSupport.sll(1, R.IndexOf(tempt)));
                             }
                             tempt = tempt.Remove(0);
                             tempt = "";
                         }
                     }
                 }
-                //for (int i = 0; i < FDSetLeft.Count; i++)
+                //for (int i = 0; i < FDsSetLeft.Count; i++)
                 //{
                 //    string a = "";
-                //    ulong j = FDSetLeft[i];
+                //    ulong j = FDsSetLeft[i];
                 //    int count = 0;
                 //    while (j != 0)
                 //    {
@@ -611,7 +625,7 @@
                 //        count++;
                 //    }
                 //    a += '-';
-                //    j = FDSetRight[i];
+                //    j = FDsSetRight[i];
                 //    count = 0;
                 //    while (j != 0)
                 //    {
@@ -671,7 +685,7 @@
             }
             public void findAllClosures()
             {
-                if (FDSetLeft.Count != FDSetRight.Count)
+                if (FDsSetLeft.Count != FDsSetRight.Count)
                 {
                     return;
                 }
@@ -693,18 +707,61 @@
                     do
                     {
                         old = FDClosure[(int)i];
-                        for (int j = 0; j < FDSetLeft.Count; j++)
+                        for (int j = 0; j < FDsSetLeft.Count; j++)
                         {
-                            if (CSupport.union(FDSetLeft[j], FDClosure[(int)i]) == FDClosure[(int)i]
-                                && CSupport.union(FDSetRight[j], FDClosure[(int)i]) != FDClosure[(int)i])
+                            if (CSupport.union(FDsSetLeft[j], FDClosure[(int)i]) == FDClosure[(int)i]
+                                && CSupport.union(FDsSetRight[j], FDClosure[(int)i]) != FDClosure[(int)i])
                             {
-                                FDClosure[(int)i] = CSupport.union(FDClosure[(int)i], FDSetRight[j]);
+                                FDClosure[(int)i] = CSupport.union(FDClosure[(int)i], FDsSetRight[j]);
                             }
                         }
                     } while (old != FDClosure[(int)i]);
                 }
             }
-            public void writeResultToListAllClosures()
+            public void findAllSuperkeysAndKeys()
+            {
+                if (R.Count == 0)
+                {
+                    return;
+                }
+
+                if (FDClosure.Count == 0)
+                {
+                    return;
+                }
+
+                if (SuperkeysSet.Count != 0)
+                {
+                    SuperkeysSet.Clear();
+                }
+
+                if (SuperkeysSet.Count != 0)
+                {
+                    KeysSet.Clear();
+                }
+
+                ulong valueSuperkey = CSupport.srl((~(ulong)(0)), (64 - R.Count));
+                uint minNumDigits = (uint)R.Count;
+
+                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
+                {
+                    if (FDClosure[(int)i] == valueSuperkey)
+                    {
+                        SuperkeysSet.Add(i + 1);
+                        if (CSupport.countBits(i + 1) > minNumDigits)
+                        {
+                            continue;
+                        }
+                        if (CSupport.countBits(i + 1) < minNumDigits)
+                        {
+                            minNumDigits = CSupport.countBits(i + 1);
+                            KeysSet.Clear();
+                        }
+                        KeysSet.Add(i + 1);
+                    }
+                }
+            }
+            public void writeResultListAllClosures()
             {
                 if (R.Count == 0)
                 {
@@ -764,6 +821,12 @@
                 {
                     return;
                 }
+
+                if (specifiedAttributes == 0)
+                {
+                    return;
+                }
+
                 ulong index = specifiedAttributes;
                 string text = "";
                 ulong num = FDClosure[(int)index - 1];
@@ -799,53 +862,74 @@
                 text += ("};" + System.Environment.NewLine);
                 MainForm.getInstance().textBoxResultClosureOf.Text = text;
             }
-            public void findAllSuperkeys()
+            public void writeResultListAllSuperKeys()
             {
-                if (R.Count == 0)
+                if (SuperkeysSet.Count == 0)
                 {
                     return;
                 }
-
-                if (FDClosure.Count == 0)
-                {
-                    return;
-                }
-
-                ulong valueSuperkey = CSupport.srl(~(ulong)(0), (64 - R.Count));
                 string text = "";
-
-                for (int i = 0; i < (int)CSupport.powOf2(R.Count) - 1; i++)
+                for (int i = 0; i < SuperkeysSet.Count; i++)
                 {
-                    if (CSupport.intrsct(FDClosure[i], valueSuperkey) == valueSuperkey)
+                    text += "{";
+                    ulong index = SuperkeysSet[i];
+                    int count = 0;
+                    while (index != 0)
                     {
-                        text += "{";
-                        ulong index = (ulong)i + 1;
-                        int count = 0;
-                        while (index != 0)
+                        if (CSupport.intrsct(index, 1) == 1)
                         {
-                            if (CSupport.intrsct(index, 1) == 1)
+                            text += R[count];
+                            if (CSupport.srl(index, 1) != 0)
                             {
-                                text += R[count];
-                                if (CSupport.srl(index, 1) != 0)
-                                {
-                                    text += ',';
-                                }
+                                text += ',';
                             }
-                            index = CSupport.srl(index, 1);
-                            count++;
                         }
-                        text += ("};" + System.Environment.NewLine);
-                        MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = text;
+                        index = CSupport.srl(index, 1);
+                        count++;
                     }
+                    text += ("};" + System.Environment.NewLine);
                 }
+                MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = text;
             }
+            public void writeResultListAllKeys()
+            {
+                if (KeysSet.Count == 0)
+                {
+                    return;
+                }
+                string text = "";
+                for (int i = 0; i < KeysSet.Count; i++)
+                {
+                    text += "{";
+                    ulong index = (ulong)KeysSet[i];
+                    int count = 0;
+                    while (index != 0)
+                    {
+                        if (CSupport.intrsct(index, 1) == 1)
+                        {
+                            text += R[count];
+                            if (CSupport.srl(index, 1) != 0)
+                            {
+                                text += ',';
+                            }
+                        }
+                        index = CSupport.srl(index, 1);
+                        count++;
+                    }
+                    text += ("};" + System.Environment.NewLine);
+                }
+                MainForm.getInstance().textBoxResultListKeysSet.Text = text;
+            }
+
 
             private CInProcess() { }
             private static CInProcess _instance = null;
             private System.Collections.Generic.List<string> R;
             private System.Collections.Generic.List<ulong> FDClosure;
-            private System.Collections.Generic.List<ulong> FDSetLeft;
-            private System.Collections.Generic.List<ulong> FDSetRight;
+            private System.Collections.Generic.List<ulong> SuperkeysSet;
+            private System.Collections.Generic.List<ulong> KeysSet;
+            private System.Collections.Generic.List<ulong> FDsSetLeft;
+            private System.Collections.Generic.List<ulong> FDsSetRight;
             private ulong specifiedAttributes;
         };
     }

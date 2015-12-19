@@ -325,7 +325,7 @@
     <value>Both</value>
   </data>
   <data name="textBoxResultListClosuresSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 147</value>
+    <value>430, 187</value>
   </data>
   <data name="textBoxResultListClosuresSet.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -556,7 +556,7 @@
     <value>141, 23</value>
   </data>
   <data name="richTextBoxResultListSuperkeysSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 154</value>
+    <value>420, 194</value>
   </data>
   <data name="richTextBoxResultListSuperkeysSet.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -631,13 +631,13 @@
     <value>0</value>
   </data>
   <data name="tabPageKeys.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
   </data>
   <data name="tabPageKeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageKeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 251</value>
+    <value>588, 248</value>
   </data>
   <data name="tabPageKeys.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -658,13 +658,13 @@
     <value>1</value>
   </data>
   <data name="tabPageClosures.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
+    <value>4, 22</value>
   </data>
   <data name="tabPageClosures.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageClosures.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 248</value>
+    <value>588, 251</value>
   </data>
   <data name="tabPageClosures.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -742,13 +742,13 @@
     <value>1</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
+    <value>4, 22</value>
   </data>
   <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 248</value>
+    <value>588, 251</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

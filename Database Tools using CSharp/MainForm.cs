@@ -67,9 +67,11 @@ namespace NSDatabaseTools
             CInProcess.getInstance().readFDsFromString();
             CInProcess.getInstance().readSpecifiedAttributesNames();
             CInProcess.getInstance().findAllClosures();
-            CInProcess.getInstance().findAllSuperkeys();
-            CInProcess.getInstance().writeResultToListAllClosures();
+            CInProcess.getInstance().findAllSuperkeysAndKeys();
+            CInProcess.getInstance().writeResultListAllSuperKeys();
+            CInProcess.getInstance().writeResultListAllClosures();
             CInProcess.getInstance().writeResultClosureOfSpecifiedAttributes();
+            CInProcess.getInstance().writeResultListAllKeys();
         }
     }
 }
