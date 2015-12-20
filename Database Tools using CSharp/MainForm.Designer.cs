@@ -2,38 +2,37 @@
 {
     class CSupport
     {
-        public static uint countBits(ulong data)
+        public static uint countBits(uint data)
         {
-            data = intrsct(data, 0x5555555555555555) + (intrsct(srl(data, 1), 0x5555555555555555));
-            data = intrsct(data, 0x3333333333333333) + (intrsct(srl(data, 2), 0x3333333333333333));
-            data = intrsct(data, 0x0F0F0F0F0F0F0F0F) + (intrsct(srl(data, 4), 0x0F0F0F0F0F0F0F0F));
-            data = intrsct(data, 0x00FF00FF00FF00FF) + (intrsct(srl(data, 8), 0x00FF00FF00FF00FF));
-            data = intrsct(data, 0x0000FFFF0000FFFF) + (intrsct(srl(data, 16), 0x0000FFFF0000FFFF));
-            data = intrsct(data, 0x00000000FFFFFFFF) + (intrsct(srl(data, 32), 0x00000000FFFFFFFF));
-            return (uint)data;
+            data = intrsct(data, 0x55555555) + (intrsct(srl(data, 1), 0x55555555));
+            data = intrsct(data, 0x33333333) + (intrsct(srl(data, 2), 0x33333333));
+            data = intrsct(data, 0x0F0F0F0F) + (intrsct(srl(data, 4), 0x0F0F0F0F));
+            data = intrsct(data, 0x00FF00FF) + (intrsct(srl(data, 8), 0x00FF00FF));
+            data = intrsct(data, 0x0000FFFF) + (intrsct(srl(data, 16), 0x0000FFFF));
+            return data;
         }
 
-        public static ulong powOf2(int n)
+        public static uint powOf2(int n)
         {
-            return (ulong)1 << n;
+            return (uint)1 << n;
         }
 
-        public static ulong union(ulong a, ulong b)
+        public static uint union(uint a, uint b)
         {
             return a | b;
         }
 
-        public static ulong intrsct(ulong a, ulong b)
+        public static uint intrsct(uint a, uint b)
         {
             return a & b;
         }
 
-        public static ulong sll(ulong a, int k)
+        public static uint sll(uint a, int k)
         {
             return a << k;
         }
 
-        public static ulong srl(ulong a, int k)
+        public static uint srl(uint a, int k)
         {
             return a >> k;
         }
@@ -614,11 +613,11 @@
             public void init()
             {
                 R = new System.Collections.Generic.List<string>();
-                FDClosure = new System.Collections.Generic.List<ulong>();
-                SuperkeysSet = new System.Collections.Generic.List<ulong>();
-                KeysSet = new System.Collections.Generic.List<ulong>();
-                FDsSetLeft = new System.Collections.Generic.List<ulong>();
-                FDsSetRight = new System.Collections.Generic.List<ulong>();
+                FDClosure = new System.Collections.Generic.List<uint>();
+                SuperkeysSet = new System.Collections.Generic.List<uint>();
+                KeysSet = new System.Collections.Generic.List<uint>();
+                FDsSetLeft = new System.Collections.Generic.List<uint>();
+                FDsSetRight = new System.Collections.Generic.List<uint>();
                 specifiedAttributes = 0;
             }
 
@@ -835,9 +834,9 @@
                     FDClosure.Clear();
                 }
 
-                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
+                for (int i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
                 {
-                    FDClosure.Add(i + 1);
+                    FDClosure.Add((uint)i + 1);
                     ulong old = FDClosure[(int)i];
                     do
                     {
@@ -847,7 +846,7 @@
                             if (CSupport.union(FDsSetLeft[j], FDClosure[(int)i]) == FDClosure[(int)i]
                                 && CSupport.union(FDsSetRight[j], FDClosure[(int)i]) != FDClosure[(int)i])
                             {
-                                FDClosure[(int)i] = CSupport.union(FDClosure[(int)i], FDsSetRight[j]);
+                                FDClosure[i] = CSupport.union(FDClosure[i], FDsSetRight[j]);
                             }
                         }
                     } while (old != FDClosure[(int)i]);
@@ -875,24 +874,24 @@
                     KeysSet.Clear();
                 }
 
-                ulong valueSuperkey = CSupport.srl((~(ulong)(0)), (64 - R.Count));
+                ulong valueSuperkey = CSupport.srl(~((uint)0), (64 - R.Count));
                 uint minNumDigits = (uint)R.Count;
 
-                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
+                for (int i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
                 {
-                    if (FDClosure[(int)i] == valueSuperkey)
+                    if (FDClosure[i] == valueSuperkey)
                     {
-                        SuperkeysSet.Add(i + 1);
-                        if (CSupport.countBits(i + 1) > minNumDigits)
+                        SuperkeysSet.Add((uint)+1);
+                        if (CSupport.countBits((uint)i + 1) > minNumDigits)
                         {
                             continue;
                         }
-                        if (CSupport.countBits(i + 1) < minNumDigits)
+                        if (CSupport.countBits((uint)i + 1) < minNumDigits)
                         {
-                            minNumDigits = CSupport.countBits(i + 1);
+                            minNumDigits = CSupport.countBits((uint)i + 1);
                             KeysSet.Clear();
                         }
-                        KeysSet.Add(i + 1);
+                        KeysSet.Add((uint)i + 1);
                     }
                 }
             }
@@ -908,10 +907,10 @@
                     return;
                 }
                 string text = "";
-                for (ulong i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
+                for (int i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
                 {
-                    ulong num = FDClosure[(int)i];
-                    ulong k = i + 1;
+                    uint num = FDClosure[i];
+                    uint k = (uint)i + 1;
                     int count = 0;
                     while (k != 0)
                     {
@@ -962,9 +961,9 @@
                     return;
                 }
 
-                ulong index = specifiedAttributes;
+                uint index = specifiedAttributes;
                 string text = "";
-                ulong num = FDClosure[(int)index - 1];
+                uint num = FDClosure[(int)index - 1];
                 int count = 0;
                 while (index != 0)
                 {
@@ -1007,7 +1006,7 @@
                 for (int i = 0; i < SuperkeysSet.Count; i++)
                 {
                     text += "{";
-                    ulong index = SuperkeysSet[i];
+                    uint index = SuperkeysSet[i];
                     int count = 0;
                     while (index != 0)
                     {
@@ -1036,7 +1035,7 @@
                 for (int i = 0; i < KeysSet.Count; i++)
                 {
                     text += "{";
-                    ulong index = (ulong)KeysSet[i];
+                    uint index = KeysSet[i];
                     int count = 0;
                     while (index != 0)
                     {
@@ -1060,12 +1059,12 @@
             private CInProcess() { }
             private static CInProcess _instance = null;
             private System.Collections.Generic.List<string> R;
-            private System.Collections.Generic.List<ulong> FDClosure;
-            private System.Collections.Generic.List<ulong> SuperkeysSet;
-            private System.Collections.Generic.List<ulong> KeysSet;
-            private System.Collections.Generic.List<ulong> FDsSetLeft;
-            private System.Collections.Generic.List<ulong> FDsSetRight;
-            private ulong specifiedAttributes;
+            private System.Collections.Generic.List<uint> FDClosure;
+            private System.Collections.Generic.List<uint> SuperkeysSet;
+            private System.Collections.Generic.List<uint> KeysSet;
+            private System.Collections.Generic.List<uint> FDsSetLeft;
+            private System.Collections.Generic.List<uint> FDsSetRight;
+            private uint specifiedAttributes;
         };
         class CADOConnection
         {
@@ -1077,6 +1076,16 @@
                     _instance = new CADOConnection();
                 }
                 return _instance;
+            }
+            public void init()
+            {
+                R = new System.Collections.Generic.List<string>();
+                FDClosure_i = new System.Collections.Generic.List<uint>();
+                SuperkeysSet = new System.Collections.Generic.List<uint>();
+                KeysSet = new System.Collections.Generic.List<uint>();
+                FDsSetLeft = new System.Collections.Generic.List<uint>();
+                FDsSetRight = new System.Collections.Generic.List<uint>();
+                CANDIDATE_SET = new System.Collections.Generic.List<uint>();
             }
             public void open()
             {
@@ -1114,8 +1123,12 @@
             }
             public void executeSQLQuery()
             {
+                if (MainForm.getInstance().textBoxInputSQLQuery.TextLength == 0)
+                {
+                    return;
+                }
                 System.Data.OleDb.OleDbCommand command = new System.Data.OleDb.OleDbCommand(MainForm.getInstance().textBoxInputSQLQuery.Text, getInstance()._connection);
-                _connection.Open();
+                getInstance()._connection.Open();
                 System.Data.OleDb.OleDbDataReader reader = command.ExecuteReader();
                 System.Data.OleDb.OleDbDataAdapter dataAdapter = new System.Data.OleDb.OleDbDataAdapter(MainForm.getInstance().textBoxInputSQLQuery.Text, getInstance()._connection);
 
@@ -1126,9 +1139,79 @@
                 MainForm.getInstance().dataGridViewResultQuery.DataSource = ds.Tables[0];
                 _connection.Close();
             }
-            public void FindAllFDs()
+            public void prepareToFindFDs()
             {
+                
+            }
+            public void findAllFDs()
+            {
+                if (CANDIDATE_SET.Count != 0)
+                {
+                    CANDIDATE_SET.Clear();
+                }
+                if (FDsSetLeft.Count != 0)
+                {
+                    FDsSetLeft.Clear();
+                }
+                if (FDsSetRight.Count != 0)
+                {
+                    FDsSetLeft.Clear();
+                }
+                if (FDClosure_i.Count != 0)
+                {
+                    FDClosure_i.Clear();
+                }
+                prepareToFindFDs();
+                while (CANDIDATE_SET.Count != 0)
+                {
+                    for (int i = 0; i < CANDIDATE_SET.Count; i++)
+                    {
+                        ComputeNonTrivialClosure(CANDIDATE_SET[i]);
+                        ObtaintFDandKey(CANDIDATE_SET[i]);
+                    }
+                }
+                ObtainEQSet();
+                PruneCandidates();
+                GenerateNextLevelCandidates();
+            }
+            public void ComputeNonTrivialClosure(uint xi)
+            {
+                uint tempt1 = ~((uint)0);
+                tempt1 -= (xi + 1);
+                uint tempt2 = ~((uint)0);
+                tempt2 -= CSupport.intrsct(tempt2, FDClosure_i[(int)xi]);
+                uint resultTempt = CSupport.intrsct(tempt1, tempt2);
 
+            }
+            public void ObtaintFDandKey(uint xi)
+            {
+                FDsSetLeft.Add(xi);
+                FDsSetRight.Add(FDClosure_i[(int)xi]);
+
+            }
+            public void ObtainEQSet()
+            {
+                for (int i = 0; i < CANDIDATE_SET.Count; i++)
+                {
+
+                }
+            }
+            public void PruneCandidates()
+            {
+                 for (int i = 0; i < CANDIDATE_SET.Count; i++)
+                 {
+
+                 }
+            }
+            public void GenerateNextLevelCandidates()
+            {
+                for (int i = 0; i < CANDIDATE_SET.Count; i++)
+                {
+                    for (int j = 0; j < CANDIDATE_SET.Count; i++)
+                    {
+
+                    }
+                }
             }
             public void loadListOfTables()
             {
@@ -1145,12 +1228,21 @@
                     for (int i = 0; i < schema.Rows.Count; i++ )
                     {
                         MainForm.getInstance().comboBoxTableList.Items.Add(schema.Rows[i][2].ToString());
+                        R.Add(schema.Rows[i][2].ToString());
                     }
+                    _connection.Close();
                 }
             }
 
             private static CADOConnection _instance = null;
             private System.Data.OleDb.OleDbConnection _connection = null;
+            private System.Collections.Generic.List<string> R;
+            private System.Collections.Generic.List<uint> FDClosure_i;
+            private System.Collections.Generic.List<uint> SuperkeysSet;
+            private System.Collections.Generic.List<uint> KeysSet;
+            private System.Collections.Generic.List<uint> FDsSetLeft;
+            private System.Collections.Generic.List<uint> FDsSetRight;
+            private System.Collections.Generic.List<uint> CANDIDATE_SET;
         };
     }
 }
