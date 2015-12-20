@@ -50,14 +50,6 @@ namespace NSDatabaseTools
             if (result == DialogResult.OK) // Test result.
             {
                 textBoxInputPath.Text = openFileDialog.FileName;
-                try
-                {
-                    string text;
-                    text = File.ReadAllText(textBoxInputPath.Text);
-                }
-                catch (IOException)
-                {
-                }
             }
         }
 
@@ -72,6 +64,15 @@ namespace NSDatabaseTools
             CInProcess.getInstance().writeResultListAllClosures();
             CInProcess.getInstance().writeResultClosureOfSpecifiedAttributes();
             CInProcess.getInstance().writeResultListAllKeys();
+        }
+
+        private void buttonConnect_Click(object sender, EventArgs e)
+        {
+            CADOConnection.getInstance().open();
+        }
+
+        private void buttonExecuteSQLQuery_Click(object sender, EventArgs e)
+        {
         }
     }
 }

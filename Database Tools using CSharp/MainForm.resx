@@ -281,36 +281,6 @@
   <data name="&gt;&gt;labelResultListKeysSet.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="labelResultListSuperkeysSet.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelResultListSuperkeysSet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelResultListSuperkeysSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-110, 22</value>
-  </data>
-  <data name="labelResultListSuperkeysSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
-  </data>
-  <data name="labelResultListSuperkeysSet.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelResultListSuperkeysSet.Text" xml:space="preserve">
-    <value>List All Superkeys:</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperkeysSet.Name" xml:space="preserve">
-    <value>labelResultListSuperkeysSet</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperkeysSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperkeysSet.Parent" xml:space="preserve">
-    <value>tabPageSuperkeys</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperkeysSet.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="textBoxResultListClosuresSet.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -445,7 +415,7 @@
     <value>298, 113</value>
   </data>
   <data name="buttonResetAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 35</value>
+    <value>81, 35</value>
   </data>
   <data name="buttonResetAll.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -576,31 +546,34 @@
   <data name="&gt;&gt;richTextBoxResultListSuperkeysSet.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelResultListSuperKeysSet.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 23</value>
+  <data name="labelResultListSuperKeysSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelResultListSuperKeysSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 23</value>
+  </data>
+  <data name="labelResultListSuperKeysSet.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 16</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelResultListSuperKeysSet.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="labelResultListSuperKeysSet.Text" xml:space="preserve">
     <value>List All Superkeys:</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;labelResultListSuperKeysSet.Name" xml:space="preserve">
+    <value>labelResultListSuperKeysSet</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelResultListSuperKeysSet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelResultListSuperKeysSet.Parent" xml:space="preserve">
     <value>tabPageSuperkeys</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelResultListSuperKeysSet.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tabPageSuperkeys.Location" type="System.Drawing.Point, System.Drawing">
@@ -631,13 +604,13 @@
     <value>0</value>
   </data>
   <data name="tabPageKeys.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
+    <value>4, 22</value>
   </data>
   <data name="tabPageKeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageKeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 248</value>
+    <value>588, 251</value>
   </data>
   <data name="tabPageKeys.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -886,7 +859,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageCalculate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 462</value>
+    <value>608, 472</value>
   </data>
   <data name="tabPageCalculate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -901,10 +874,325 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPageCalculate.Parent" xml:space="preserve">
-    <value>generalTabs</value>
+    <value>Query</value>
   </data>
   <data name="&gt;&gt;tabPageCalculate.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="textBoxConnectionStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="textBoxConnectionStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 63</value>
+  </data>
+  <data name="textBoxConnectionStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 29</value>
+  </data>
+  <data name="textBoxConnectionStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;textBoxConnectionStatus.Name" xml:space="preserve">
+    <value>textBoxConnectionStatus</value>
+  </data>
+  <data name="&gt;&gt;textBoxConnectionStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxConnectionStatus.Parent" xml:space="preserve">
+    <value>tabPageConnect</value>
+  </data>
+  <data name="&gt;&gt;textBoxConnectionStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 60</value>
+  </data>
+  <data name="buttonConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 35</value>
+  </data>
+  <data name="buttonConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="buttonConnect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="&gt;&gt;buttonConnect.Name" xml:space="preserve">
+    <value>buttonConnect</value>
+  </data>
+  <data name="&gt;&gt;buttonConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonConnect.Parent" xml:space="preserve">
+    <value>tabPageConnect</value>
+  </data>
+  <data name="&gt;&gt;buttonConnect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 42</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 2</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPageFindFDs</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="richTextBoxResultAllFDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 48</value>
+  </data>
+  <data name="richTextBoxResultAllFDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 254</value>
+  </data>
+  <data name="richTextBoxResultAllFDs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="richTextBoxResultAllFDs.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBoxResultAllFDs.Name" xml:space="preserve">
+    <value>richTextBoxResultAllFDs</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxResultAllFDs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxResultAllFDs.Parent" xml:space="preserve">
+    <value>tabPageFindFDs</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxResultAllFDs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonFindFDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 3</value>
+  </data>
+  <data name="buttonFindFDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 35</value>
+  </data>
+  <data name="buttonFindFDs.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonFindFDs.Text" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="&gt;&gt;buttonFindFDs.Name" xml:space="preserve">
+    <value>buttonFindFDs</value>
+  </data>
+  <data name="&gt;&gt;buttonFindFDs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonFindFDs.Parent" xml:space="preserve">
+    <value>tabPageFindFDs</value>
+  </data>
+  <data name="&gt;&gt;buttonFindFDs.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPageFindFDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageFindFDs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageFindFDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 336</value>
+  </data>
+  <data name="tabPageFindFDs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageFindFDs.Text" xml:space="preserve">
+    <value>Find FDs</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Name" xml:space="preserve">
+    <value>tabPageFindFDs</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Parent" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonExecuteSQLQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 64</value>
+  </data>
+  <data name="buttonExecuteSQLQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 35</value>
+  </data>
+  <data name="buttonExecuteSQLQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonExecuteSQLQuery.Text" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="&gt;&gt;buttonExecuteSQLQuery.Name" xml:space="preserve">
+    <value>buttonExecuteSQLQuery</value>
+  </data>
+  <data name="&gt;&gt;buttonExecuteSQLQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonExecuteSQLQuery.Parent" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;buttonExecuteSQLQuery.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelResultQuery.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelResultQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 107</value>
+  </data>
+  <data name="labelResultQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 16</value>
+  </data>
+  <data name="labelResultQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelResultQuery.Text" xml:space="preserve">
+    <value>Result Query</value>
+  </data>
+  <data name="&gt;&gt;labelResultQuery.Name" xml:space="preserve">
+    <value>labelResultQuery</value>
+  </data>
+  <data name="&gt;&gt;labelResultQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelResultQuery.Parent" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;labelResultQuery.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 126</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 210</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelQuery.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="labelQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 16</value>
+  </data>
+  <data name="labelQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelQuery.Text" xml:space="preserve">
+    <value>SQL query:</value>
+  </data>
+  <data name="&gt;&gt;labelQuery.Name" xml:space="preserve">
+    <value>labelQuery</value>
+  </data>
+  <data name="&gt;&gt;labelQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelQuery.Parent" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;labelQuery.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxInputSQLQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 36</value>
+  </data>
+  <data name="textBoxInputSQLQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 22</value>
+  </data>
+  <data name="textBoxInputSQLQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputSQLQuery.Name" xml:space="preserve">
+    <value>textBoxInputSQLQuery</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputSQLQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputSQLQuery.Parent" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputSQLQuery.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPageQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageQuery.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 336</value>
+  </data>
+  <data name="tabPageQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageQuery.Text" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Name" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Parent" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControlConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 100</value>
+  </data>
+  <data name="tabControlConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>599, 365</value>
+  </data>
+  <data name="tabControlConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Name" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Parent" xml:space="preserve">
+    <value>tabPageConnect</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buttonBrowse.Location" type="System.Drawing.Point, System.Drawing">
     <value>458, 33</value>
@@ -928,31 +1216,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;buttonBrowse.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="richTextBoxResultFDsSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 127</value>
-  </data>
-  <data name="richTextBoxResultFDsSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 311</value>
-  </data>
-  <data name="richTextBoxResultFDsSet.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="richTextBoxResultFDsSet.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richTextBoxResultFDsSet.Name" xml:space="preserve">
-    <value>richTextBoxResultFDsSet</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultFDsSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultFDsSet.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultFDsSet.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="labelResultFDsSet.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -982,31 +1246,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;labelResultFDsSet.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonFindFDs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 80</value>
-  </data>
-  <data name="buttonFindFDs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="buttonFindFDs.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonFindFDs.Text" xml:space="preserve">
-    <value>Find All FDs</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Name" xml:space="preserve">
-    <value>buttonFindFDs</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelInputPath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1036,7 +1276,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;labelInputPath.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textBoxInputPath.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -1060,7 +1300,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;textBoxInputPath.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tabPageConnect.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -1069,7 +1309,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 462</value>
+    <value>608, 472</value>
   </data>
   <data name="tabPageConnect.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1084,7 +1324,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPageConnect.Parent" xml:space="preserve">
-    <value>generalTabs</value>
+    <value>Query</value>
   </data>
   <data name="&gt;&gt;tabPageConnect.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1115,60 +1355,60 @@ Contact:
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;richTextBoxAbout.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabPageAbout</value>
   </data>
   <data name="&gt;&gt;richTextBoxAbout.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageAbout.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageAbout.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 462</value>
+  <data name="tabPageAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 472</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabPageAbout.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
+  <data name="tabPageAbout.Text" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabPageAbout.Name" xml:space="preserve">
+    <value>tabPageAbout</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageAbout.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>generalTabs</value>
+  <data name="&gt;&gt;tabPageAbout.Parent" xml:space="preserve">
+    <value>Query</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPageAbout.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="generalTabs.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Query.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="generalTabs.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Query.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 2</value>
   </data>
-  <data name="generalTabs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>616, 491</value>
+  <data name="Query.Size" type="System.Drawing.Size, System.Drawing">
+    <value>616, 501</value>
   </data>
-  <data name="generalTabs.TabIndex" type="System.Int32, mscorlib">
+  <data name="Query.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;generalTabs.Name" xml:space="preserve">
-    <value>generalTabs</value>
+  <data name="&gt;&gt;Query.Name" xml:space="preserve">
+    <value>Query</value>
   </data>
-  <data name="&gt;&gt;generalTabs.Type" xml:space="preserve">
+  <data name="&gt;&gt;Query.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;generalTabs.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Query.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;generalTabs.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Query.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

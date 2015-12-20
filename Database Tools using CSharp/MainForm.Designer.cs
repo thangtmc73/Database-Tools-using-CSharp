@@ -79,7 +79,6 @@
             this.labelInputListFDsSet = new System.Windows.Forms.Label();
             this.textBoxResultListKeysSet = new System.Windows.Forms.TextBox();
             this.labelResultListKeysSet = new System.Windows.Forms.Label();
-            this.labelResultListSuperkeysSet = new System.Windows.Forms.Label();
             this.textBoxResultListClosuresSet = new System.Windows.Forms.TextBox();
             this.labelResultListClosuresSet = new System.Windows.Forms.Label();
             this.labelAuthor = new System.Windows.Forms.Label();
@@ -87,14 +86,14 @@
             this.buttonResetAll = new System.Windows.Forms.Button();
             this.labelLine1 = new System.Windows.Forms.Label();
             this.labelLine2 = new System.Windows.Forms.Label();
-            this.generalTabs = new System.Windows.Forms.TabControl();
+            this.Query = new System.Windows.Forms.TabControl();
             this.tabPageCalculate = new System.Windows.Forms.TabPage();
             this.textBoxInputListAttributesSetToFindClosures = new System.Windows.Forms.TextBox();
             this.buttonExecuteCalculate = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageSuperkeys = new System.Windows.Forms.TabPage();
             this.richTextBoxResultListSuperkeysSet = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelResultListSuperKeysSet = new System.Windows.Forms.Label();
             this.tabPageKeys = new System.Windows.Forms.TabPage();
             this.tabPageClosures = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -104,16 +103,27 @@
             this.labelHeaderResult = new System.Windows.Forms.Label();
             this.labelHeaderInput = new System.Windows.Forms.Label();
             this.tabPageConnect = new System.Windows.Forms.TabPage();
-            this.buttonBrowse = new System.Windows.Forms.Button();
-            this.richTextBoxResultFDsSet = new System.Windows.Forms.RichTextBox();
-            this.labelResultFDsSet = new System.Windows.Forms.Label();
+            this.textBoxConnectionStatus = new System.Windows.Forms.TextBox();
+            this.buttonConnect = new System.Windows.Forms.Button();
+            this.tabControlConnect = new System.Windows.Forms.TabControl();
+            this.tabPageFindFDs = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.richTextBoxResultAllFDs = new System.Windows.Forms.RichTextBox();
             this.buttonFindFDs = new System.Windows.Forms.Button();
+            this.tabPageQuery = new System.Windows.Forms.TabPage();
+            this.buttonExecuteSQLQuery = new System.Windows.Forms.Button();
+            this.labelResultQuery = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelQuery = new System.Windows.Forms.Label();
+            this.textBoxInputSQLQuery = new System.Windows.Forms.TextBox();
+            this.buttonBrowse = new System.Windows.Forms.Button();
+            this.labelResultFDsSet = new System.Windows.Forms.Label();
             this.labelInputPath = new System.Windows.Forms.Label();
             this.textBoxInputPath = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPageAbout = new System.Windows.Forms.TabPage();
             this.richTextBoxAbout = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.generalTabs.SuspendLayout();
+            this.Query.SuspendLayout();
             this.tabPageCalculate.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPageSuperkeys.SuspendLayout();
@@ -121,7 +131,11 @@
             this.tabPageClosures.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPageConnect.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabControlConnect.SuspendLayout();
+            this.tabPageFindFDs.SuspendLayout();
+            this.tabPageQuery.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPageAbout.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelInputListAllAttributes
@@ -155,11 +169,6 @@
             // 
             resources.ApplyResources(this.labelResultListKeysSet, "labelResultListKeysSet");
             this.labelResultListKeysSet.Name = "labelResultListKeysSet";
-            // 
-            // labelResultListSuperkeysSet
-            // 
-            resources.ApplyResources(this.labelResultListSuperkeysSet, "labelResultListSuperkeysSet");
-            this.labelResultListSuperkeysSet.Name = "labelResultListSuperkeysSet";
             // 
             // textBoxResultListClosuresSet
             // 
@@ -202,14 +211,14 @@
             resources.ApplyResources(this.labelLine2, "labelLine2");
             this.labelLine2.Name = "labelLine2";
             // 
-            // generalTabs
+            // Query
             // 
-            this.generalTabs.Controls.Add(this.tabPageCalculate);
-            this.generalTabs.Controls.Add(this.tabPageConnect);
-            this.generalTabs.Controls.Add(this.tabPage3);
-            resources.ApplyResources(this.generalTabs, "generalTabs");
-            this.generalTabs.Name = "generalTabs";
-            this.generalTabs.SelectedIndex = 0;
+            this.Query.Controls.Add(this.tabPageCalculate);
+            this.Query.Controls.Add(this.tabPageConnect);
+            this.Query.Controls.Add(this.tabPageAbout);
+            resources.ApplyResources(this.Query, "Query");
+            this.Query.Name = "Query";
+            this.Query.SelectedIndex = 0;
             // 
             // tabPageCalculate
             // 
@@ -259,8 +268,7 @@
             // 
             this.tabPageSuperkeys.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPageSuperkeys.Controls.Add(this.richTextBoxResultListSuperkeysSet);
-            this.tabPageSuperkeys.Controls.Add(this.label1);
-            this.tabPageSuperkeys.Controls.Add(this.labelResultListSuperkeysSet);
+            this.tabPageSuperkeys.Controls.Add(this.labelResultListSuperKeysSet);
             resources.ApplyResources(this.tabPageSuperkeys, "tabPageSuperkeys");
             this.tabPageSuperkeys.Name = "tabPageSuperkeys";
             this.tabPageSuperkeys.UseVisualStyleBackColor = true;
@@ -271,10 +279,10 @@
             resources.ApplyResources(this.richTextBoxResultListSuperkeysSet, "richTextBoxResultListSuperkeysSet");
             this.richTextBoxResultListSuperkeysSet.Name = "richTextBoxResultListSuperkeysSet";
             // 
-            // label1
+            // labelResultListSuperKeysSet
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.labelResultListSuperKeysSet, "labelResultListSuperKeysSet");
+            this.labelResultListSuperKeysSet.Name = "labelResultListSuperKeysSet";
             // 
             // tabPageKeys
             // 
@@ -333,15 +341,109 @@
             // tabPageConnect
             // 
             this.tabPageConnect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageConnect.Controls.Add(this.textBoxConnectionStatus);
+            this.tabPageConnect.Controls.Add(this.buttonConnect);
+            this.tabPageConnect.Controls.Add(this.tabControlConnect);
             this.tabPageConnect.Controls.Add(this.buttonBrowse);
-            this.tabPageConnect.Controls.Add(this.richTextBoxResultFDsSet);
             this.tabPageConnect.Controls.Add(this.labelResultFDsSet);
-            this.tabPageConnect.Controls.Add(this.buttonFindFDs);
             this.tabPageConnect.Controls.Add(this.labelInputPath);
             this.tabPageConnect.Controls.Add(this.textBoxInputPath);
             resources.ApplyResources(this.tabPageConnect, "tabPageConnect");
             this.tabPageConnect.Name = "tabPageConnect";
             this.tabPageConnect.UseVisualStyleBackColor = true;
+            // 
+            // textBoxConnectionStatus
+            // 
+            this.textBoxConnectionStatus.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.textBoxConnectionStatus, "textBoxConnectionStatus");
+            this.textBoxConnectionStatus.ForeColor = System.Drawing.Color.Green;
+            this.textBoxConnectionStatus.Name = "textBoxConnectionStatus";
+            this.textBoxConnectionStatus.ReadOnly = true;
+            // 
+            // buttonConnect
+            // 
+            resources.ApplyResources(this.buttonConnect, "buttonConnect");
+            this.buttonConnect.Name = "buttonConnect";
+            this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
+            // 
+            // tabControlConnect
+            // 
+            this.tabControlConnect.Controls.Add(this.tabPageFindFDs);
+            this.tabControlConnect.Controls.Add(this.tabPageQuery);
+            resources.ApplyResources(this.tabControlConnect, "tabControlConnect");
+            this.tabControlConnect.Name = "tabControlConnect";
+            this.tabControlConnect.SelectedIndex = 0;
+            // 
+            // tabPageFindFDs
+            // 
+            this.tabPageFindFDs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageFindFDs.Controls.Add(this.label2);
+            this.tabPageFindFDs.Controls.Add(this.richTextBoxResultAllFDs);
+            this.tabPageFindFDs.Controls.Add(this.buttonFindFDs);
+            resources.ApplyResources(this.tabPageFindFDs, "tabPageFindFDs");
+            this.tabPageFindFDs.Name = "tabPageFindFDs";
+            this.tabPageFindFDs.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // richTextBoxResultAllFDs
+            // 
+            this.richTextBoxResultAllFDs.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.richTextBoxResultAllFDs, "richTextBoxResultAllFDs");
+            this.richTextBoxResultAllFDs.Name = "richTextBoxResultAllFDs";
+            // 
+            // buttonFindFDs
+            // 
+            resources.ApplyResources(this.buttonFindFDs, "buttonFindFDs");
+            this.buttonFindFDs.Name = "buttonFindFDs";
+            this.buttonFindFDs.UseVisualStyleBackColor = true;
+            // 
+            // tabPageQuery
+            // 
+            this.tabPageQuery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageQuery.Controls.Add(this.buttonExecuteSQLQuery);
+            this.tabPageQuery.Controls.Add(this.labelResultQuery);
+            this.tabPageQuery.Controls.Add(this.dataGridView1);
+            this.tabPageQuery.Controls.Add(this.labelQuery);
+            this.tabPageQuery.Controls.Add(this.textBoxInputSQLQuery);
+            resources.ApplyResources(this.tabPageQuery, "tabPageQuery");
+            this.tabPageQuery.Name = "tabPageQuery";
+            this.tabPageQuery.UseVisualStyleBackColor = true;
+            // 
+            // buttonExecuteSQLQuery
+            // 
+            resources.ApplyResources(this.buttonExecuteSQLQuery, "buttonExecuteSQLQuery");
+            this.buttonExecuteSQLQuery.Name = "buttonExecuteSQLQuery";
+            this.buttonExecuteSQLQuery.UseVisualStyleBackColor = true;
+            this.buttonExecuteSQLQuery.Click += new System.EventHandler(this.buttonExecuteSQLQuery_Click);
+            // 
+            // labelResultQuery
+            // 
+            resources.ApplyResources(this.labelResultQuery, "labelResultQuery");
+            this.labelResultQuery.Name = "labelResultQuery";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            // 
+            // labelQuery
+            // 
+            resources.ApplyResources(this.labelQuery, "labelQuery");
+            this.labelQuery.Name = "labelQuery";
+            // 
+            // textBoxInputSQLQuery
+            // 
+            this.textBoxInputSQLQuery.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.textBoxInputSQLQuery, "textBoxInputSQLQuery");
+            this.textBoxInputSQLQuery.Name = "textBoxInputSQLQuery";
             // 
             // buttonBrowse
             // 
@@ -350,22 +452,10 @@
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
             // 
-            // richTextBoxResultFDsSet
-            // 
-            resources.ApplyResources(this.richTextBoxResultFDsSet, "richTextBoxResultFDsSet");
-            this.richTextBoxResultFDsSet.Name = "richTextBoxResultFDsSet";
-            this.richTextBoxResultFDsSet.ReadOnly = true;
-            // 
             // labelResultFDsSet
             // 
             resources.ApplyResources(this.labelResultFDsSet, "labelResultFDsSet");
             this.labelResultFDsSet.Name = "labelResultFDsSet";
-            // 
-            // buttonFindFDs
-            // 
-            resources.ApplyResources(this.buttonFindFDs, "buttonFindFDs");
-            this.buttonFindFDs.Name = "buttonFindFDs";
-            this.buttonFindFDs.UseVisualStyleBackColor = true;
             // 
             // labelInputPath
             // 
@@ -377,13 +467,13 @@
             resources.ApplyResources(this.textBoxInputPath, "textBoxInputPath");
             this.textBoxInputPath.Name = "textBoxInputPath";
             // 
-            // tabPage3
+            // tabPageAbout
             // 
-            this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage3.Controls.Add(this.richTextBoxAbout);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageAbout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageAbout.Controls.Add(this.richTextBoxAbout);
+            resources.ApplyResources(this.tabPageAbout, "tabPageAbout");
+            this.tabPageAbout.Name = "tabPageAbout";
+            this.tabPageAbout.UseVisualStyleBackColor = true;
             // 
             // richTextBoxAbout
             // 
@@ -397,11 +487,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.generalTabs);
+            this.Controls.Add(this.Query);
             this.Controls.Add(this.labelAuthor);
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.generalTabs.ResumeLayout(false);
+            this.Query.ResumeLayout(false);
             this.tabPageCalculate.ResumeLayout(false);
             this.tabPageCalculate.PerformLayout();
             this.tabControl.ResumeLayout(false);
@@ -415,7 +505,12 @@
             this.tabPage1.PerformLayout();
             this.tabPageConnect.ResumeLayout(false);
             this.tabPageConnect.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.tabControlConnect.ResumeLayout(false);
+            this.tabPageFindFDs.ResumeLayout(false);
+            this.tabPageQuery.ResumeLayout(false);
+            this.tabPageQuery.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPageAbout.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,21 +531,20 @@
         private System.Windows.Forms.Label labelInputListAllAttributes;
         private System.Windows.Forms.Label labelInputListFDsSet;
         private System.Windows.Forms.Label labelResultListKeysSet;
-        private System.Windows.Forms.Label labelResultListSuperkeysSet;
         private System.Windows.Forms.Label labelResultListClosuresSet;
         private System.Windows.Forms.Label labelAuthor;
         private System.Windows.Forms.Label labelInputFindClosureOf;
         private System.Windows.Forms.Button buttonResetAll;
         private System.Windows.Forms.Label labelLine1;
         private System.Windows.Forms.Label labelLine2;
-        private System.Windows.Forms.TabControl generalTabs;
+        private System.Windows.Forms.TabControl Query;
         private System.Windows.Forms.TabPage tabPageCalculate;
         private System.Windows.Forms.TabPage tabPageConnect;
         private System.Windows.Forms.Label labelInputPath;
         private System.Windows.Forms.Label labelHeaderInput;
         private System.Windows.Forms.Label labelHeaderResult;
         private System.Windows.Forms.Label labelHeaderControl;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPageAbout;
         private System.Windows.Forms.Label labelResultFDsSet;
         private System.Windows.Forms.Button buttonFindFDs;
         private System.Windows.Forms.Button buttonBrowse;
@@ -461,7 +555,6 @@
         public System.Windows.Forms.TextBox textBoxResultListKeysSet;
         public System.Windows.Forms.TextBox textBoxResultListClosuresSet;
         public System.Windows.Forms.TextBox textBoxInputPath;
-        public System.Windows.Forms.RichTextBox richTextBoxResultFDsSet;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPageSuperkeys;
         private System.Windows.Forms.TabPage tabPageKeys;
@@ -470,9 +563,21 @@
         private System.Windows.Forms.Label labelResultClosureOfAttributes;
         public System.Windows.Forms.TextBox textBoxResultClosureOf;
         private System.Windows.Forms.Button buttonExecuteCalculate;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelResultListSuperKeysSet;
         private System.Windows.Forms.TextBox textBoxInputListAttributesSetToFindClosures;
         private System.Windows.Forms.RichTextBox richTextBoxResultListSuperkeysSet;
+        private System.Windows.Forms.TabControl tabControlConnect;
+        private System.Windows.Forms.TabPage tabPageFindFDs;
+        private System.Windows.Forms.TabPage tabPageQuery;
+        private System.Windows.Forms.TextBox textBoxInputSQLQuery;
+        private System.Windows.Forms.Label labelQuery;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label labelResultQuery;
+        private System.Windows.Forms.RichTextBox richTextBoxResultAllFDs;
+        private System.Windows.Forms.Button buttonExecuteSQLQuery;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxConnectionStatus;
+        private System.Windows.Forms.Button buttonConnect;
 
         class CInProcess
         {
@@ -931,6 +1036,65 @@
             private System.Collections.Generic.List<ulong> FDsSetLeft;
             private System.Collections.Generic.List<ulong> FDsSetRight;
             private ulong specifiedAttributes;
+        };
+        class CADOConnection
+        {
+            private CADOConnection() { }
+            public static CADOConnection getInstance()
+            {
+                if (_instance == null)
+                {
+                    _instance = new CADOConnection();
+                }
+                return _instance;
+            }
+            public void open()
+            {
+                if (MainForm.getInstance().textBoxInputPath.TextLength == 0)
+                {
+                    return;
+                }
+                
+                string text = "";
+
+                for (int i = 0; i < MainForm.getInstance().textBoxInputPath.TextLength; i++)
+                {
+                    text += MainForm.getInstance().textBoxInputPath.Text[i];
+                    if (MainForm.getInstance().textBoxInputPath.Text[i] == '\\')
+                    {
+                        text += '\\';
+                    }
+                }
+                string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
+            + text + ";User Id=admin;Password=;";
+                getInstance()._connection = null;
+                MainForm.getInstance().textBoxConnectionStatus.Text = "";
+                _connection = new System.Data.OleDb.OleDbConnection(connectionString);
+                if (_connection != null)
+                {
+                    MainForm.getInstance().textBoxConnectionStatus.ForeColor = System.Drawing.Color.Green;
+                    MainForm.getInstance().textBoxConnectionStatus.Text = "OK";
+                }
+                else
+                {
+                    MainForm.getInstance().textBoxConnectionStatus.ForeColor = System.Drawing.Color.Red;
+                    MainForm.getInstance().textBoxConnectionStatus.Text = "FAILED";
+                }
+            }
+            public void executeSQLQuery()
+            {
+                System.Data.OleDb.OleDbCommand command = new System.Data.OleDb.OleDbCommand(MainForm.getInstance().textBoxInputSQLQuery, connection);
+                _connection.Open();
+                System.Data.OleDb.OleDbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    
+                }
+                reader.Close();
+            }
+
+            private static CADOConnection _instance = null;
+            private System.Data.OleDb.OleDbConnection _connection = null;
         };
     }
 }
