@@ -73,6 +73,13 @@ namespace NSDatabaseTools
 
         private void buttonExecuteSQLQuery_Click(object sender, EventArgs e)
         {
+            CADOConnection.getInstance().executeSQLQuery();
+        }
+
+        private void textBoxInputPath_TextChanged(object sender, EventArgs e)
+        {
+            MainForm.getInstance().textBoxConnectionStatus.Text = "";
+            
         }
     }
 }
