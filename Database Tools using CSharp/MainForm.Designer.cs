@@ -76,7 +76,6 @@
             this.textBoxInputListAttributesSet = new System.Windows.Forms.TextBox();
             this.textBoxInputListFDsSet = new System.Windows.Forms.TextBox();
             this.labelInputListFDsSet = new System.Windows.Forms.Label();
-            this.textBoxResultListKeysSet = new System.Windows.Forms.TextBox();
             this.labelResultListKeysSet = new System.Windows.Forms.Label();
             this.textBoxResultListClosuresSet = new System.Windows.Forms.TextBox();
             this.labelResultListClosuresSet = new System.Windows.Forms.Label();
@@ -94,6 +93,7 @@
             this.richTextBoxResultListSuperkeysSet = new System.Windows.Forms.RichTextBox();
             this.labelResultListSuperKeysSet = new System.Windows.Forms.Label();
             this.tabPageKeys = new System.Windows.Forms.TabPage();
+            this.richTextBoxResultListKeysSet = new System.Windows.Forms.RichTextBox();
             this.tabPageClosures = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.labelResultClosureOfAttributes = new System.Windows.Forms.Label();
@@ -159,13 +159,6 @@
             // 
             resources.ApplyResources(this.labelInputListFDsSet, "labelInputListFDsSet");
             this.labelInputListFDsSet.Name = "labelInputListFDsSet";
-            // 
-            // textBoxResultListKeysSet
-            // 
-            this.textBoxResultListKeysSet.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.textBoxResultListKeysSet, "textBoxResultListKeysSet");
-            this.textBoxResultListKeysSet.Name = "textBoxResultListKeysSet";
-            this.textBoxResultListKeysSet.ReadOnly = true;
             // 
             // labelResultListKeysSet
             // 
@@ -289,11 +282,17 @@
             // tabPageKeys
             // 
             this.tabPageKeys.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPageKeys.Controls.Add(this.richTextBoxResultListKeysSet);
             this.tabPageKeys.Controls.Add(this.labelResultListKeysSet);
-            this.tabPageKeys.Controls.Add(this.textBoxResultListKeysSet);
             resources.ApplyResources(this.tabPageKeys, "tabPageKeys");
             this.tabPageKeys.Name = "tabPageKeys";
             this.tabPageKeys.UseVisualStyleBackColor = true;
+            // 
+            // richTextBoxResultListKeysSet
+            // 
+            resources.ApplyResources(this.richTextBoxResultListKeysSet, "richTextBoxResultListKeysSet");
+            this.richTextBoxResultListKeysSet.Name = "richTextBoxResultListKeysSet";
+            this.richTextBoxResultListKeysSet.ReadOnly = true;
             // 
             // tabPageClosures
             // 
@@ -514,6 +513,9 @@
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.Query);
             this.Controls.Add(this.labelAuthor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Query.ResumeLayout(false);
@@ -578,7 +580,6 @@
         private System.Windows.Forms.RichTextBox richTextBoxAbout;
         public System.Windows.Forms.TextBox textBoxInputListAttributesSet;
         public System.Windows.Forms.TextBox textBoxInputListFDsSet;
-        public System.Windows.Forms.TextBox textBoxResultListKeysSet;
         public System.Windows.Forms.TextBox textBoxResultListClosuresSet;
         public System.Windows.Forms.TextBox textBoxInputPath;
         private System.Windows.Forms.TabControl tabControlCalculate;
@@ -607,6 +608,7 @@
         private System.Windows.Forms.Label labelTableName;
         private System.Windows.Forms.ComboBox comboBoxTableList;
         private System.Windows.Forms.Label labelConnectLine2;
+        private System.Windows.Forms.RichTextBox richTextBoxResultListKeysSet;
 
         class CInProcess
         {
@@ -869,29 +871,34 @@
                     SuperkeysSet.Clear();
                 }
 
-                if (SuperkeysSet.Count != 0)
+                if (KeysSet.Count != 0)
                 {
                     KeysSet.Clear();
                 }
 
-                ulong valueSuperkey = CSupport.srl(~((uint)0), (64 - R.Count));
-                uint minNumDigits = (uint)R.Count;
+                uint valueSuperkey = CSupport.srl(~((uint)0), (32 - R.Count));
 
                 for (int i = 0; i < CSupport.powOf2(R.Count) - 1; i++)
                 {
                     if (FDClosure[i] == valueSuperkey)
                     {
-                        SuperkeysSet.Add((uint)+1);
-                        if (CSupport.countBits((uint)i + 1) > minNumDigits)
+                        SuperkeysSet.Add((uint)i + 1);
+                        bool flag = false;
+                        if (KeysSet.Count != 0)
                         {
-                            continue;
+                            for (int j = 0; j < KeysSet.Count; j++)
+                            {
+                                if (CSupport.union(KeysSet[j], (uint)(i + 1)) == (uint)(i + 1))
+                                {
+                                    flag = true;
+                                    break;
+                                }
+                            }
                         }
-                        if (CSupport.countBits((uint)i + 1) < minNumDigits)
+                        if (!flag)
                         {
-                            minNumDigits = CSupport.countBits((uint)i + 1);
-                            KeysSet.Clear();
+                            KeysSet.Add((uint)(i + 1));
                         }
-                        KeysSet.Add((uint)i + 1);
                     }
                 }
             }
@@ -1052,7 +1059,7 @@
                     }
                     text += ("};" + System.Environment.NewLine);
                 }
-                MainForm.getInstance().textBoxResultListKeysSet.Text = text;
+                MainForm.getInstance().richTextBoxResultListKeysSet.Text = text;
             }
 
 

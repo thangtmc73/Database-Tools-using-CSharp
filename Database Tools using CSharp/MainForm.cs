@@ -23,7 +23,7 @@ namespace NSDatabaseTools
             // reset
             MainForm.getInstance().textBoxResultClosureOf.Text = "";
             MainForm.getInstance().textBoxResultListClosuresSet.Text = "";
-            MainForm.getInstance().textBoxResultListKeysSet.Text = "";
+            MainForm.getInstance().richTextBoxResultListKeysSet.Text = "";
             MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = "";
         }
 
@@ -40,7 +40,7 @@ namespace NSDatabaseTools
             MainForm.getInstance().textBoxInputPath.Text = "";
             MainForm.getInstance().textBoxResultClosureOf.Text = "";
             MainForm.getInstance().textBoxResultListClosuresSet.Text = "";
-            MainForm.getInstance().textBoxResultListKeysSet.Text = "";
+            MainForm.getInstance().richTextBoxResultListKeysSet.Text = "";
             MainForm.getInstance().richTextBoxResultListSuperkeysSet.Text = "";
         }
 
@@ -79,7 +79,6 @@ namespace NSDatabaseTools
         private void textBoxInputPath_TextChanged(object sender, EventArgs e)
         {
             MainForm.getInstance().textBoxConnectionStatus.Text = "";
-            
         }
     }
 }
