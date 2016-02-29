@@ -16,7 +16,7 @@ namespace NSDatabaseTools
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(MainForm.getInstance());
+            Application.Run(MainForm.Instance);
         }
     }
 }

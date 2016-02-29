@@ -498,192 +498,6 @@
   <metadata name="tabPageCalculate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabPageAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;tabPageCalculate.Name" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.Parent" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Name" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Parent" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPageAbout.Name" xml:space="preserve">
-    <value>tabPageAbout</value>
-  </data>
-  <data name="&gt;&gt;tabPageAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageAbout.Parent" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageAbout.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Query.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="Query.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="Query.Size" type="System.Drawing.Size, System.Drawing">
-    <value>616, 501</value>
-  </data>
-  <data name="Query.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;Query.Name" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;Query.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Query.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Query.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="tabPageCalculate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxInputListAttributesSetToFindClosures.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonExecuteCalculate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabControlCalculate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelHeaderControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelHeaderResult.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelHeaderInput.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;textBoxInputListAttributesSetToFindClosures.Name" xml:space="preserve">
-    <value>textBoxInputListAttributesSetToFindClosures</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputListAttributesSetToFindClosures.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputListAttributesSetToFindClosures.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputListAttributesSetToFindClosures.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteCalculate.Name" xml:space="preserve">
-    <value>buttonExecuteCalculate</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteCalculate.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteCalculate.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Name" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderControl.Name" xml:space="preserve">
-    <value>labelHeaderControl</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderControl.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderControl.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderResult.Name" xml:space="preserve">
-    <value>labelHeaderResult</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderResult.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderResult.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderResult.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderInput.Name" xml:space="preserve">
-    <value>labelHeaderInput</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderInput.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;labelHeaderInput.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPageCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPageCalculate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageCalculate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 472</value>
-  </data>
-  <data name="tabPageCalculate.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageCalculate.Text" xml:space="preserve">
-    <value>Calculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.Name" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.Parent" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageCalculate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="textBoxInputListAttributesSetToFindClosures.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -741,144 +555,6 @@
   <metadata name="tabPageSuperkeys.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageKeys.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabPageClosures.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabPage1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;tabPageSuperkeys.Name" xml:space="preserve">
-    <value>tabPageSuperkeys</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeys.Name" xml:space="preserve">
-    <value>tabPageKeys</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeys.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeys.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeys.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPageClosures.Name" xml:space="preserve">
-    <value>tabPageClosures</value>
-  </data>
-  <data name="&gt;&gt;tabPageClosures.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageClosures.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageClosures.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControlCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 175</value>
-  </data>
-  <data name="tabControlCalculate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>596, 277</value>
-  </data>
-  <data name="tabControlCalculate.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Name" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.Parent" xml:space="preserve">
-    <value>tabPageCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabControlCalculate.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="tabPageSuperkeys.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="richTextBoxResultListSuperkeysSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelResultListSuperKeysSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;richTextBoxResultListSuperkeysSet.Name" xml:space="preserve">
-    <value>richTextBoxResultListSuperkeysSet</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListSuperkeysSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListSuperkeysSet.Parent" xml:space="preserve">
-    <value>tabPageSuperkeys</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListSuperkeysSet.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperKeysSet.Name" xml:space="preserve">
-    <value>labelResultListSuperKeysSet</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperKeysSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperKeysSet.Parent" xml:space="preserve">
-    <value>tabPageSuperkeys</value>
-  </data>
-  <data name="&gt;&gt;labelResultListSuperKeysSet.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageSuperkeys.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPageSuperkeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageSuperkeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 248</value>
-  </data>
-  <data name="tabPageSuperkeys.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageSuperkeys.Text" xml:space="preserve">
-    <value>All Superkeys</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.Name" xml:space="preserve">
-    <value>tabPageSuperkeys</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPageSuperkeys.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="richTextBoxResultListSuperkeysSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -939,12 +615,51 @@
   <data name="&gt;&gt;labelResultListSuperKeysSet.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tabPageSuperkeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageSuperkeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageSuperkeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 248</value>
+  </data>
+  <data name="tabPageSuperkeys.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageSuperkeys.Text" xml:space="preserve">
+    <value>All Superkeys</value>
+  </data>
+  <data name="&gt;&gt;tabPageSuperkeys.Name" xml:space="preserve">
+    <value>tabPageSuperkeys</value>
+  </data>
+  <data name="&gt;&gt;tabPageSuperkeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageSuperkeys.Parent" xml:space="preserve">
+    <value>tabControlCalculate</value>
+  </data>
+  <data name="&gt;&gt;tabPageSuperkeys.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="tabPageKeys.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="richTextBoxResultListKeysSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="richTextBoxResultListKeysSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 24</value>
+  </data>
+  <data name="richTextBoxResultListKeysSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 196</value>
+  </data>
+  <data name="richTextBoxResultListKeysSet.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="richTextBoxResultListKeysSet.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;richTextBoxResultListKeysSet.Name" xml:space="preserve">
     <value>richTextBoxResultListKeysSet</value>
   </data>
@@ -984,33 +699,6 @@
   <data name="&gt;&gt;tabPageKeys.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="richTextBoxResultListKeysSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="richTextBoxResultListKeysSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 24</value>
-  </data>
-  <data name="richTextBoxResultListKeysSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 196</value>
-  </data>
-  <data name="richTextBoxResultListKeysSet.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="richTextBoxResultListKeysSet.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListKeysSet.Name" xml:space="preserve">
-    <value>richTextBoxResultListKeysSet</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListKeysSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListKeysSet.Parent" xml:space="preserve">
-    <value>tabPageKeys</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultListKeysSet.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="tabPageClosures.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1044,63 +732,6 @@
   <metadata name="tabPage1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelResultClosureOfAttributes.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxResultClosureOf.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;labelResultClosureOfAttributes.Name" xml:space="preserve">
-    <value>labelResultClosureOfAttributes</value>
-  </data>
-  <data name="&gt;&gt;labelResultClosureOfAttributes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelResultClosureOfAttributes.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;labelResultClosureOfAttributes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxResultClosureOf.Name" xml:space="preserve">
-    <value>textBoxResultClosureOf</value>
-  </data>
-  <data name="&gt;&gt;textBoxResultClosureOf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxResultClosureOf.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;textBoxResultClosureOf.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 251</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Closure of specified Attributes</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControlCalculate</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <metadata name="labelResultClosureOfAttributes.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1163,6 +794,54 @@
   </data>
   <data name="&gt;&gt;textBoxResultClosureOf.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 251</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Closure of specified Attributes</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControlCalculate</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControlCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 175</value>
+  </data>
+  <data name="tabControlCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 277</value>
+  </data>
+  <data name="tabControlCalculate.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tabControlCalculate.Name" xml:space="preserve">
+    <value>tabControlCalculate</value>
+  </data>
+  <data name="&gt;&gt;tabControlCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlCalculate.Parent" xml:space="preserve">
+    <value>tabPageCalculate</value>
+  </data>
+  <data name="&gt;&gt;tabControlCalculate.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="labelHeaderControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1263,176 +942,44 @@
   <data name="&gt;&gt;labelHeaderInput.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="tabPageCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageCalculate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 472</value>
+  </data>
+  <data name="tabPageCalculate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageCalculate.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;tabPageCalculate.Name" xml:space="preserve">
+    <value>tabPageCalculate</value>
+  </data>
+  <data name="&gt;&gt;tabPageCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageCalculate.Parent" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="&gt;&gt;tabPageCalculate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="tabPageConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="textBoxConnectionStatus.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabControlConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonBrowse.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelResultFDsSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelInputPath.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxInputPath.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;textBoxConnectionStatus.Name" xml:space="preserve">
-    <value>textBoxConnectionStatus</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonConnect.Name" xml:space="preserve">
-    <value>buttonConnect</value>
-  </data>
-  <data name="&gt;&gt;buttonConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonConnect.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;buttonConnect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Name" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonBrowse.Name" xml:space="preserve">
-    <value>buttonBrowse</value>
-  </data>
-  <data name="&gt;&gt;buttonBrowse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonBrowse.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;buttonBrowse.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelResultFDsSet.Name" xml:space="preserve">
-    <value>labelResultFDsSet</value>
-  </data>
-  <data name="&gt;&gt;labelResultFDsSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelResultFDsSet.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;labelResultFDsSet.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelInputPath.Name" xml:space="preserve">
-    <value>labelInputPath</value>
-  </data>
-  <data name="&gt;&gt;labelInputPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelInputPath.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;labelInputPath.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputPath.Name" xml:space="preserve">
-    <value>textBoxInputPath</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputPath.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputPath.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tabPageConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPageConnect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 472</value>
-  </data>
-  <data name="tabPageConnect.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageConnect.Text" xml:space="preserve">
-    <value>Connect</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Name" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.Parent" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageConnect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="textBoxConnectionStatus.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="textBoxConnectionStatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="textBoxConnectionStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 63</value>
-  </data>
-  <data name="textBoxConnectionStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 29</value>
-  </data>
-  <data name="textBoxConnectionStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.Name" xml:space="preserve">
-    <value>textBoxConnectionStatus</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;textBoxConnectionStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="buttonConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="buttonConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 60</value>
+    <value>252, 60</value>
   </data>
   <data name="buttonConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 35</value>
+    <value>85, 35</value>
   </data>
   <data name="buttonConnect.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1450,7 +997,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;buttonConnect.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <metadata name="tabControlConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1458,159 +1005,6 @@
   <metadata name="tabPageFindFDs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;tabPageFindFDs.Name" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.Parent" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Name" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Parent" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControlConnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 100</value>
-  </data>
-  <data name="tabControlConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>599, 365</value>
-  </data>
-  <data name="tabControlConnect.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Name" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.Parent" xml:space="preserve">
-    <value>tabPageConnect</value>
-  </data>
-  <data name="&gt;&gt;tabControlConnect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="tabPageFindFDs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxTableList.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTableName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelConnectLine1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="richTextBoxResultAllFDs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonFindFDs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;comboBoxTableList.Name" xml:space="preserve">
-    <value>comboBoxTableList</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTableList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTableList.Parent" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTableList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelTableName.Name" xml:space="preserve">
-    <value>labelTableName</value>
-  </data>
-  <data name="&gt;&gt;labelTableName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTableName.Parent" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;labelTableName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine1.Name" xml:space="preserve">
-    <value>labelConnectLine1</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine1.Parent" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultAllFDs.Name" xml:space="preserve">
-    <value>richTextBoxResultAllFDs</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultAllFDs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultAllFDs.Parent" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxResultAllFDs.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Name" xml:space="preserve">
-    <value>buttonFindFDs</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.Parent" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;buttonFindFDs.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabPageFindFDs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPageFindFDs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageFindFDs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 336</value>
-  </data>
-  <data name="tabPageFindFDs.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageFindFDs.Text" xml:space="preserve">
-    <value>Find FDs</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.Name" xml:space="preserve">
-    <value>tabPageFindFDs</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.Parent" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageFindFDs.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="comboBoxTableList.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1746,126 +1140,36 @@
   <data name="&gt;&gt;buttonFindFDs.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="tabPageFindFDs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageFindFDs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageFindFDs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 336</value>
+  </data>
+  <data name="tabPageFindFDs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageFindFDs.Text" xml:space="preserve">
+    <value>Find FDs</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Name" xml:space="preserve">
+    <value>tabPageFindFDs</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.Parent" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabPageFindFDs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="tabPageQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelConnectLine2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonExecuteSQLQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelResultQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewResultQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxInputSQLQuery.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;labelConnectLine2.Name" xml:space="preserve">
-    <value>labelConnectLine2</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine2.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;labelConnectLine2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteSQLQuery.Name" xml:space="preserve">
-    <value>buttonExecuteSQLQuery</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteSQLQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteSQLQuery.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;buttonExecuteSQLQuery.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelResultQuery.Name" xml:space="preserve">
-    <value>labelResultQuery</value>
-  </data>
-  <data name="&gt;&gt;labelResultQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelResultQuery.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;labelResultQuery.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewResultQuery.Name" xml:space="preserve">
-    <value>dataGridViewResultQuery</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewResultQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewResultQuery.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewResultQuery.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelQuery.Name" xml:space="preserve">
-    <value>labelQuery</value>
-  </data>
-  <data name="&gt;&gt;labelQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelQuery.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;labelQuery.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputSQLQuery.Name" xml:space="preserve">
-    <value>textBoxInputSQLQuery</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputSQLQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputSQLQuery.Parent" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputSQLQuery.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPageQuery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageQuery.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageQuery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 339</value>
-  </data>
-  <data name="tabPageQuery.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageQuery.Text" xml:space="preserve">
-    <value>Query</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Name" xml:space="preserve">
-    <value>tabPageQuery</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.Parent" xml:space="preserve">
-    <value>tabControlConnect</value>
-  </data>
-  <data name="&gt;&gt;tabPageQuery.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="labelConnectLine2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2028,6 +1332,54 @@
   <data name="&gt;&gt;textBoxInputSQLQuery.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="tabPageQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPageQuery.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 339</value>
+  </data>
+  <data name="tabPageQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageQuery.Text" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Name" xml:space="preserve">
+    <value>tabPageQuery</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.Parent" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabPageQuery.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControlConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 100</value>
+  </data>
+  <data name="tabControlConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>599, 365</value>
+  </data>
+  <data name="tabControlConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Name" xml:space="preserve">
+    <value>tabControlConnect</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.Parent" xml:space="preserve">
+    <value>tabPageConnect</value>
+  </data>
+  <data name="&gt;&gt;tabControlConnect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="buttonBrowse.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2053,7 +1405,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;buttonBrowse.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <metadata name="labelResultFDsSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2086,7 +1438,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;labelResultFDsSet.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <metadata name="labelInputPath.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2119,7 +1471,7 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;labelInputPath.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <metadata name="textBoxInputPath.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2146,7 +1498,34 @@
     <value>tabPageConnect</value>
   </data>
   <data name="&gt;&gt;textBoxInputPath.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
+  </data>
+  <data name="tabPageConnect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPageConnect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 472</value>
+  </data>
+  <data name="tabPageConnect.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageConnect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="&gt;&gt;tabPageConnect.Name" xml:space="preserve">
+    <value>tabPageConnect</value>
+  </data>
+  <data name="&gt;&gt;tabPageConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageConnect.Parent" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="&gt;&gt;tabPageConnect.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="tabPageAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2154,6 +1533,24 @@
   <metadata name="richTextBoxAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="richTextBoxAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 45</value>
+  </data>
+  <data name="richTextBoxAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 125</value>
+  </data>
+  <data name="richTextBoxAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="richTextBoxAbout.Text" xml:space="preserve">
+    <value>This program was written by thangtmc73, used in course Fundamental Database.
+Thanks for using this program.
+----------------
+Contact:
+	Facebook: www.fb.com/thangtmc73
+	Email: thangtranminh.vn@gmail.com
+----------------</value>
+  </data>
   <data name="&gt;&gt;richTextBoxAbout.Name" xml:space="preserve">
     <value>richTextBoxAbout</value>
   </data>
@@ -2193,37 +1590,28 @@
   <data name="&gt;&gt;tabPageAbout.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="richTextBoxAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="richTextBoxAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 45</value>
+  <data name="Query.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="richTextBoxAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 125</value>
+  <data name="Query.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
   </data>
-  <data name="richTextBoxAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="Query.Size" type="System.Drawing.Size, System.Drawing">
+    <value>616, 501</value>
   </data>
-  <data name="richTextBoxAbout.Text" xml:space="preserve">
-    <value>This program was written by thangtmc73, used in course Fundamental Database.
-Thanks for using this program.
-----------------
-Contact:
-	Facebook: www.fb.com/thangtmc73
-	Email: thangtranminh.vn@gmail.com
-----------------</value>
+  <data name="Query.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;richTextBoxAbout.Name" xml:space="preserve">
-    <value>richTextBoxAbout</value>
+  <data name="&gt;&gt;Query.Name" xml:space="preserve">
+    <value>Query</value>
   </data>
-  <data name="&gt;&gt;richTextBoxAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Query.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;richTextBoxAbout.Parent" xml:space="preserve">
-    <value>tabPageAbout</value>
+  <data name="&gt;&gt;Query.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;richTextBoxAbout.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Query.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -2240,6 +1628,25 @@ Contact:
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>621, 522</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAA
+        AAB1dQF1dQB1dQF1dQF1dQF1dQB1dQF1dQF1dQF1dQB1dQF1dQF1dQF1dQB1dQF1dQF1dQB0dAB1dQB0
+        dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1
+        dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF0dAB1dQB0dAB1dQB0dAB1dQCKiimYmEN0dAB1dQB0
+        dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1dQB1dQF1dQB1dQGYl0KurWp1dQB1dQF1dQB1dQF1dQB1dQF1
+        dQB1dQB0dAB1dQB0dAB1dQB0dAB1dQCYl0KurWp0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1
+        dQB1dQF1dQB1dQGYl0KurWp1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF0dAB1dQB0dAB1dQB0dAB1dQCY
+        l0KurWp0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1dQB1dQF1dQB1dQGYl0KurWp1dQB1dQF1
+        dQB1dQF1dQB1dQF1dQB1dQB0dAB1dQB0dAB1dQB0dAB1dQCYl0KurWp0dAB1dQB0dAB1dQB0dAB1dQB0
+        dAB1dQF1dQB1dQF1dQB1dQF1dQB1dQGYl0KurWp1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF0dAB1dQB0
+        dAB1dQB0dAB1dQCYl0KurWp0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1dQCQkDPMzKLMzKLT
+        067X17bMzKLMzKKenk11dQB1dQB1dQF1dQB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0
+        dAB1dQB0dAB1dQB0dAB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1dQB1dQF1
+        dQF1dQF0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQB0dAB1dQF0dAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Database Tools using C#</value>
